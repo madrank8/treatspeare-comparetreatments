@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+
+# builds
+.next/
+out/
+build/
+coverage/
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# env files
+.env*
+
+# logs
+*.log
+
+# os
+.DS_Store

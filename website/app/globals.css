@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+/* ============================================================
+   CompareTreatments.com — Design System
+   Tailwind v4 @theme tokens. Extracted from architecture §5:
+   clean clinical-trust — white canvas, deep navy, ONE bright
+   green for affiliate CTAs, amber for rating stars.
+   ============================================================ */
+
+@theme {
+  /* ── Brand (deep navy / blue) ───────────────────────────── */
+  --color-brand-50: #f1f6fc;
+  --color-brand-100: #dce8f7;
+  --color-brand-500: #2563eb;
+  --color-brand-600: #1e4d8c;
+  --color-brand-700: #13345c;
+  --color-brand-900: #0b1f3a;
+
+  /* ── Accent (affiliate CTA green) ───────────────────────── */
+  --color-accent-50: #e9f8ef;
+  --color-accent-600: #16a34a;
+  --color-accent-700: #15803d;
+
+  /* ── Rating (amber stars / score highlights) ────────────── */
+  --color-rating-50: #fef3e0;
+  --color-rating-500: #f5a623;
+
+  /* ── Ink (text) ─────────────────────────────────────────── */
+  --color-ink-500: #64748b;
+  --color-ink-700: #334155;
+  --color-ink-900: #0f172a;
+
+  /* ── Lines / surfaces ───────────────────────────────────── */
+  --color-line-200: #e2e8f0;
+  --color-surface-0: #ffffff;
+  --color-surface-50: #f8fafc;
+
+  /* ── Semantic ───────────────────────────────────────────── */
+  --color-danger-600: #dc2626;
+  --color-success-600: #16a34a;
+
+  /* ── Typography ─────────────────────────────────────────── */
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-sora), var(--font-inter), sans-serif;
+
+  /* ── Border radius ──────────────────────────────────────── */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  /* ── Shadows ────────────────────────────────────────────── */
+  --shadow-card: 0 1px 3px rgba(15, 23, 42, 0.08),
+    0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-card-hover: 0 8px 24px rgba(15, 23, 42, 0.12);
+  --shadow-float: 0 12px 32px rgba(11, 31, 58, 0.18);
+
+  /* ── Layout ─────────────────────────────────────────────── */
+  --container-content: 1200px;
+
+  /* ── Animations (Radix accordion) ───────────────────────── */
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+}
+
+@keyframes accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+/* ── Base ─────────────────────────────────────────────────── */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-surface-50);
+  color: var(--color-ink-700);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-ink-900);
+  font-family: var(--font-display);
+  text-wrap: balance;
+}
+
+/* Visible, accessible focus ring */
+*:focus-visible {
+  outline: 2px solid var(--color-brand-500);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ── Utilities ────────────────────────────────────────────── */
+@utility fluid-display {
+  font-size: clamp(2.25rem, 4vw, 3.25rem);
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Long-form editorial prose */
+.prose-body :where(p) {
+  margin-block: 0.85em;
+  line-height: 1.7;
+}
+.prose-body :where(h2) {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 1.75em;
+  margin-bottom: 0.5em;
+}
+.prose-body :where(h3) {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1.4em;
+  margin-bottom: 0.4em;
+}
+.prose-body :where(ul) {
+  margin-block: 0.85em;
+  padding-left: 1.25em;
+  list-style: disc;
+}
+.prose-body :where(li) {
+  margin-block: 0.3em;
+  line-height: 1.65;
+}
+.prose-body :where(a) {
+  color: var(--color-brand-600);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
