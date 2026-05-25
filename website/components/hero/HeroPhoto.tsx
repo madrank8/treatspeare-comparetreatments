@@ -7,22 +7,17 @@ import { cn } from "@/lib/utils";
 /**
  * Homepage hero photograph.
  *
- * ─────────────────────────────────────────────────────────────────────
- * TO FINISH THE HERO: drop the real photo at
- *   website/public/images/hero-home.jpg
- * (recommended ~1200×1000, JPG). That is the ONLY remaining step — the
- * page will pick it up automatically.
- * ─────────────────────────────────────────────────────────────────────
- *
- * Until the file exists, a tasteful styled placeholder panel renders in
- * its place so the page never shows a broken image.
+ * The hero photo lives at website/public/hero-home.png and is served from
+ * /hero-home.png. next/image optimizes it on delivery (resize + WebP/AVIF),
+ * so a PNG source is fine. If the file is ever missing, a styled placeholder
+ * renders in its place so the page never shows a broken image.
  */
-const HERO_IMAGE_PATH = "/images/hero-home.jpg";
+const HERO_IMAGE_PATH = "/hero-home.png";
 
 function heroImageExists(): boolean {
   try {
     return fs.existsSync(
-      path.join(process.cwd(), "public", "images", "hero-home.jpg"),
+      path.join(process.cwd(), "public", "hero-home.png"),
     );
   } catch {
     return false;
@@ -42,14 +37,13 @@ export function HeroPhoto({ className }: { className?: string }) {
       {hasPhoto ? (
         <Image
           src={HERO_IMAGE_PATH}
-          alt="A person comparing telehealth treatment options with confidence"
+          alt="A happy couple dancing together in their bright, modern kitchen"
           fill
           priority
           sizes="(max-width: 1024px) 100vw, 560px"
           className="object-cover"
         />
       ) : (
-        // Graceful styled fallback — shown only until hero-home.jpg lands.
         <div className="flex h-full w-full flex-col items-center justify-center gap-3 bg-gradient-to-br from-brand-100 to-brand-50 text-brand-600">
           <span className="flex h-14 w-14 items-center justify-center rounded-full bg-white/70">
             <ImageIcon className="h-7 w-7" aria-hidden />
@@ -58,7 +52,7 @@ export function HeroPhoto({ className }: { className?: string }) {
             Add your hero photo at
             <br />
             <code className="text-xs text-brand-700">
-              public/images/hero-home.jpg
+              public/hero-home.png
             </code>
           </p>
         </div>
