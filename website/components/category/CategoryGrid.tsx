@@ -1,16 +1,16 @@
-import type { TreatmentCategory } from "@/types";
+import type { HomeCategory } from "@/lib/data/site-content";
 import { CategoryTile } from "./CategoryTile";
 
-/** Responsive grid of category tiles. */
+/** Responsive grid of homepage category tiles. */
 export function CategoryGrid({
   categories,
 }: {
-  categories: TreatmentCategory[];
+  categories: HomeCategory[];
 }) {
   return (
-    <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+    <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
       {categories.map((cat) => (
-        <CategoryTile key={cat.slug} category={cat} />
+        <CategoryTile key={cat.name} category={cat} />
       ))}
     </div>
   );

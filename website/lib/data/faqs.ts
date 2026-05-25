@@ -33,6 +33,12 @@ export const faqs: FAQ[] = [
     answer:
       "Health content is written by experienced health editors and medically reviewed by licensed clinicians. Each comparison and review page shows the medical reviewer and the date the page was last reviewed.",
   },
+  {
+    slug: "which-providers-included",
+    question: "Which treatment providers do you include?",
+    answer:
+      "We only review and rank providers that meet our trust and safety standards — genuine licensed clinical oversight, transparent pricing and a legitimate operating history. Providers that fall short are left out, whether or not they have an affiliate program.",
+  },
 
   // ── Weight-loss / semaglutide hub FAQs ─────────────────────
   {

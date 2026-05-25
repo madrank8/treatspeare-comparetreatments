@@ -1,46 +1,117 @@
-import type { ReviewStep, TrustStat } from "@/types";
+import type { IconKey, ReviewStep, TrustStat } from "@/types";
 
 /**
  * Reusable editorial site content: process steps, trust stats and the
  * homepage FAQ set. Sample content only.
  */
 
+/** A tile in the homepage "Explore treatments by category" grid. */
+export interface HomeCategory {
+  /** Links to the category hub. */
+  href: string;
+  icon: IconKey;
+  name: string;
+  description: string;
+  /** Optional pill, e.g. "Most Popular". */
+  badge?: string;
+}
+
+/**
+ * The 7 homepage category tiles, in mockup order. These map to the
+ * treatment hubs the homepage links out to (TRT/HRT route to the
+ * men's/women's hormone hubs until dedicated hubs exist).
+ */
+export const homeCategories: HomeCategory[] = [
+  {
+    href: "/ed",
+    icon: "ed",
+    name: "ED",
+    description: "Clinician-prescribed erectile dysfunction treatment.",
+  },
+  {
+    href: "/weight-loss",
+    icon: "weight-loss",
+    name: "Weight Loss",
+    description: "GLP-1 programs — semaglutide and tirzepatide.",
+    badge: "Most Popular",
+  },
+  {
+    href: "/mens-health",
+    icon: "trt",
+    name: "TRT",
+    description: "Testosterone replacement therapy for men.",
+  },
+  {
+    href: "/womens-health",
+    icon: "hrt",
+    name: "HRT",
+    description: "Hormone therapy and menopause care for women.",
+  },
+  {
+    href: "/blood-testing",
+    icon: "blood-testing",
+    name: "Blood Testing",
+    description: "At-home lab kits and biomarker panels.",
+  },
+  {
+    href: "/wellness",
+    icon: "wellness",
+    name: "Advanced Wellness",
+    description: "Longevity, sleep and metabolic health programs.",
+  },
+  {
+    href: "/hair-loss",
+    icon: "hair-loss",
+    name: "Hair Loss",
+    description: "Finasteride, minoxidil and regrowth plans.",
+  },
+];
+
+/** Weighted ranking criteria — the "Rankings you can trust" strip. */
+export const rankingWeights: { label: string; weight: string }[] = [
+  { label: "Effectiveness", weight: "25%" },
+  { label: "Customer Experience", weight: "20%" },
+  { label: "Value", weight: "15%" },
+  { label: "Transparency", weight: "10%" },
+  { label: "Provider Reputation", weight: "5%" },
+];
+
 /** "How we review every treatment" — homepage process steps. */
 export const reviewSteps: ReviewStep[] = [
   {
     number: 1,
-    title: "Research",
+    title: "We research",
     description:
-      "We map every credible provider in a category and gather their pricing, clinical model and program details from primary sources.",
+      "We map every credible provider in a category and gather pricing, clinical model and program details from primary sources.",
     icon: "search",
   },
   {
     number: 2,
-    title: "Compare",
+    title: "We evaluate",
     description:
-      "Each provider is assessed against the same weighted criteria so the comparison is genuinely apples-to-apples.",
-    icon: "scale",
-  },
-  {
-    number: 3,
-    title: "Score",
-    description:
-      "We translate the assessment into a transparent 0–10 score covering oversight, options, price and support.",
+      "Each provider is scored against the same weighted criteria — effectiveness, experience, value, transparency and reputation.",
     icon: "calculator",
   },
   {
-    number: 4,
-    title: "Verify",
+    number: 3,
+    title: "We compare",
     description:
-      "A licensed medical reviewer checks the content for clinical accuracy before anything is published.",
-    icon: "shield-check",
+      "We line providers up side by side so the comparison is genuinely apples-to-apples — no marketing spin.",
+    icon: "scale",
+  },
+  {
+    number: 4,
+    title: "We update",
+    description:
+      "We re-review at least every 90 days, and immediately when a provider changes its pricing or program.",
+    icon: "send",
   },
   {
     number: 5,
-    title: "Publish & update",
+    title: "You decide",
     description:
-      "We publish, then re-review at least every 90 days — and immediately when a provider changes its offer.",
-    icon: "send",
+      "You get a clear, honest ranking to take into an informed conversation with a licensed clinician.",
+    icon: "shield-check",
   },
 ];
 
@@ -78,10 +149,11 @@ export const rankSteps: ReviewStep[] = [
 
 /** Dark TrustBar statistics. */
 export const trustStats: TrustStat[] = [
-  { value: "200+", label: "Treatments reviewed" },
-  { value: "50,000+", label: "Readers helped" },
-  { value: "10", label: "Expert reviewers" },
-  { value: "100%", label: "Editorially independent" },
+  { value: "200+", label: "Hours of Research" },
+  { value: "50,000+", label: "Customer Reviews Analyzed" },
+  { value: "10", label: "Expert Reviewers" },
+  { value: "Trusted", label: "Providers Only" },
+  { value: "100%", label: "Independent & Editorially Driven" },
 ];
 
 /** Compact micro-row of trust signals shown under hero headings. */
@@ -96,6 +168,7 @@ export const homepageFaqSlugs = [
   "how-do-you-make-money",
   "is-this-medical-advice",
   "how-are-treatments-scored",
+  "which-providers-included",
   "how-often-updated",
   "who-reviews-content",
 ];

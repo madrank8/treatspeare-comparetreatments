@@ -1,27 +1,25 @@
-import { ButtonLink } from "@/components/ui/Button";
+import Link from "next/link";
+import { Search } from "lucide-react";
 import { Container } from "./Container";
 import { SiteLogo } from "./SiteLogo";
 import { MegaNav } from "./MegaNav";
 import { MobileNav } from "./MobileNav";
 
-/** Sticky site header: logo, primary nav and a CTA. */
+/** Sticky site header: logo, primary nav and a search affordance. */
 export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-line-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/90">
       <Container className="flex h-16 items-center justify-between gap-4">
-        <div className="flex items-center gap-8">
-          <SiteLogo />
+        <SiteLogo />
+        <div className="flex items-center gap-1">
           <MegaNav />
-        </div>
-        <div className="flex items-center gap-2">
-          <ButtonLink
+          <Link
             href="/weight-loss"
-            variant="primary"
-            size="sm"
-            className="hidden sm:inline-flex"
+            aria-label="Search treatments"
+            className="ml-1 flex h-9 w-9 items-center justify-center rounded-md text-ink-700 transition-colors hover:bg-brand-50 hover:text-brand-600"
           >
-            Compare treatments
-          </ButtonLink>
+            <Search className="h-[18px] w-[18px]" aria-hidden />
+          </Link>
           <MobileNav />
         </div>
       </Container>

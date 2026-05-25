@@ -1,55 +1,88 @@
-import { CalendarCheck, ShieldCheck, Stethoscope } from "lucide-react";
+import {
+  CalendarCheck,
+  CircleDollarSign,
+  ScrollText,
+  ShieldCheck,
+  Stethoscope,
+} from "lucide-react";
 import { ButtonLink } from "@/components/ui/Button";
 import { Container } from "@/components/layout/Container";
 import { formatDate } from "@/lib/utils";
 import { TrustStatChip } from "./TrustStatChip";
-import { TrustMicroRow } from "./TrustMicroRow";
-import { HeroIllustration } from "./HeroIllustration";
+import { HeroPhoto } from "./HeroPhoto";
+import { HeroStatCard } from "./HeroStatCard";
 
-/** Homepage hero — split layout with illustration and floating chip. */
+/** The 3-icon trust row shown beneath the homepage hero copy. */
+const heroTrustItems = [
+  { icon: ScrollText, label: "Expert research you can trust" },
+  { icon: ShieldCheck, label: "Independent & unbiased" },
+  { icon: CircleDollarSign, label: "Transparent pricing & real reviews" },
+] as const;
+
+/** Homepage hero — split layout with a real photo and floating stat card. */
 export function HomeHero() {
   return (
     <section className="relative overflow-hidden border-b border-line-200 bg-white">
-      <Container className="grid items-center gap-10 py-14 lg:grid-cols-2 lg:gap-12 lg:py-20">
+      <Container className="grid items-center gap-10 py-14 lg:grid-cols-2 lg:gap-14 lg:py-20">
         {/* Left: copy */}
         <div>
-          <p className="mb-3 inline-flex items-center gap-2 rounded-full bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-600">
-            <ShieldCheck className="h-3.5 w-3.5" aria-hidden />
-            Independent telehealth comparisons
-          </p>
           <h1 className="fluid-display text-brand-900">
             Compare trusted treatments.{" "}
-            <span className="text-brand-600">Choose what&apos;s right.</span>
+            <span className="text-brand-600">
+              Choose what&apos;s right.
+            </span>
           </h1>
-          <p className="mt-4 max-w-xl text-lg leading-relaxed text-ink-700">
-            We research, score and medically review US telehealth providers
-            across weight loss, men&apos;s and women&apos;s health and more —
-            so you can compare your options side by side and pick with
-            confidence.
+          <p className="mt-5 max-w-xl text-lg leading-relaxed text-ink-700">
+            We research, compare, and rank the best treatments so you can
+            make confident decisions about your health and wellness.
           </p>
-          <div className="mt-6 flex flex-wrap gap-3">
+
+          {/* 3-icon trust row */}
+          <ul className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-x-6 sm:gap-y-3">
+            {heroTrustItems.map((item) => {
+              const LucideComp = item.icon;
+              return (
+                <li
+                  key={item.label}
+                  className="flex items-center gap-2 text-sm font-medium text-ink-700"
+                >
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-brand-50 text-brand-600">
+                    <LucideComp className="h-4 w-4" aria-hidden />
+                  </span>
+                  {item.label}
+                </li>
+              );
+            })}
+          </ul>
+
+          {/* Buttons */}
+          <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/weight-loss" variant="primary" size="lg">
-              Browse all treatments
+              Browse All Treatments
             </ButtonLink>
-            <ButtonLink href="/how-we-review" variant="secondary" size="lg">
-              How we review
+            <ButtonLink href="/weight-loss" variant="secondary" size="lg">
+              Find My Best Option
             </ButtonLink>
           </div>
-          <TrustMicroRow
-            points={["Independent", "Evidence-based", "Medically reviewed"]}
-            className="mt-6"
-          />
+
+          {/* Reassurance strip */}
+          <p className="mt-7 max-w-xl text-sm leading-relaxed text-ink-500">
+            We only review and recommend providers that meet our strict
+            trust and safety standards.{" "}
+            <ButtonLink
+              href="/how-we-review"
+              variant="ghost"
+              className="inline px-0 py-0 align-baseline text-sm font-semibold text-brand-600 underline underline-offset-2 hover:bg-transparent"
+            >
+              See our review process
+            </ButtonLink>
+          </p>
         </div>
 
-        {/* Right: illustration + floating chip */}
+        {/* Right: photo + floating stat card */}
         <div className="relative">
-          {/* Reserve space so the chip never shifts layout */}
-          <HeroIllustration className="w-full" />
-          <TrustStatChip
-            value="1,804"
-            label="Treatments reviewed"
-            className="absolute -bottom-4 left-2 sm:left-6"
-          />
+          <HeroPhoto />
+          <HeroStatCard className="absolute -bottom-6 -left-2 sm:left-4 lg:-left-8" />
         </div>
       </Container>
     </section>

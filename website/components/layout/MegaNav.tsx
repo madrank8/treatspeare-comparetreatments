@@ -15,6 +15,17 @@ export function MegaNav() {
     <NavigationMenu.Root className="relative hidden lg:block" delayDuration={80}>
       <NavigationMenu.List className="flex items-center gap-1">
         <NavigationMenu.Item>
+          <NavigationMenu.Link asChild>
+            <Link
+              href="/"
+              className="inline-flex items-center rounded-md px-3 py-2 text-sm font-semibold text-ink-700 transition-colors hover:bg-brand-50 hover:text-brand-600"
+            >
+              Home
+            </Link>
+          </NavigationMenu.Link>
+        </NavigationMenu.Item>
+
+        <NavigationMenu.Item>
           <NavigationMenu.Trigger className="group inline-flex items-center gap-1 rounded-md px-3 py-2 text-sm font-semibold text-ink-700 transition-colors hover:bg-brand-50 hover:text-brand-600 data-[state=open]:text-brand-600">
             Treatments
             <ChevronDown
@@ -75,7 +86,7 @@ export function MegaNav() {
               href="/how-we-review"
               className="inline-flex items-center rounded-md px-3 py-2 text-sm font-semibold text-ink-700 transition-colors hover:bg-brand-50 hover:text-brand-600"
             >
-              How we review
+              Articles
             </Link>
           </NavigationMenu.Link>
         </NavigationMenu.Item>

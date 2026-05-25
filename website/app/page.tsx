@@ -6,18 +6,19 @@ import { Container } from "@/components/layout/Container";
 import { ButtonLink } from "@/components/ui/Button";
 import { HomeHero } from "@/components/hero/Hero";
 import { CategoryGrid } from "@/components/category/CategoryGrid";
-import { FeaturedCard } from "@/components/comparison/FeaturedCard";
+import { RankedCard } from "@/components/comparison/RankedCard";
+import { RankingWeightsBar } from "@/components/trust/RankingWeightsBar";
 import { HowWeReviewSteps } from "@/components/content/HowWeReviewSteps";
 import { TrustBar } from "@/components/trust/TrustBar";
 import { FAQAccordion } from "@/components/content/FAQAccordion";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { buildFaqSchema } from "@/lib/schema";
-import { orderedCategories } from "@/lib/data/categories";
 import { getBrand } from "@/lib/data/brands";
 import { getRankingTable } from "@/lib/data/rankings";
 import { getFaqs } from "@/lib/data/faqs";
+import type { RankingEntry } from "@/types";
 import {
-  featuredBrandSlugs,
+  homeCategories,
   homepageFaqSlugs,
   reviewSteps,
   trustStats,
@@ -34,14 +35,36 @@ export const metadata: Metadata = {
   },
 };
 
+/**
+ * Homepage "Top-rated treatments" picks. Curated from the weight-loss
+ * ranking, with homepage-specific rank, award label and headline score
+ * so the three-card row matches the design.
+ */
+const topRatedPicks: {
+  brandSlug: string;
+  rankLabel: string;
+  rank: number;
+  score: number;
+}[] = [
+  { brandSlug: "trimrx", rankLabel: "Best Overall", rank: 1, score: 9.8 },
+  { brandSlug: "sunlightrx", rankLabel: "Best Value", rank: 2, score: 9.4 },
+  { brandSlug: "noom", rankLabel: "Best for Support", rank: 3, score: 9.1 },
+];
+
 export default function HomePage() {
-  // Featured comparison cards — curated from the weight-loss ranking.
   const weightLoss = getRankingTable("weight-loss");
-  const featured = featuredBrandSlugs
-    .map((slug) => {
-      const entry = weightLoss?.entries.find((e) => e.brandSlug === slug);
-      const brand = getBrand(slug);
-      return entry && brand ? { entry, brand } : null;
+
+  // Build the three top-rated cards from the weight-loss ranking.
+  const topRated = topRatedPicks
+    .map(({ brandSlug, rankLabel, rank, score }) => {
+      const base = weightLoss?.entries.find(
+        (e) => e.brandSlug === brandSlug,
+      );
+      const brand = getBrand(brandSlug);
+      if (!base || !brand) return null;
+      // Homepage display entry — overrides rank/score for the curated row.
+      const entry: RankingEntry = { ...base, rank, score };
+      return { entry, brand, rankLabel };
     })
     .filter((x): x is NonNullable<typeof x> => x !== null);
 
@@ -49,77 +72,83 @@ export default function HomePage() {
 
   return (
     <>
-      {/* ── Hero ─────────────────────────────────────────────── */}
+      {/* ── 1 · Hero ──────────────────────────────────────────── */}
       <HomeHero />
 
-      {/* ── Category grid ────────────────────────────────────── */}
+      {/* ── 2 · Explore treatments by category ────────────────── */}
       <Section tone="muted">
         <SectionHeading
-          eyebrow="Explore by category"
-          title="Find the right treatment for you"
-          dek="Browse our independent comparisons across the telehealth categories we cover."
+          title="Explore treatments by category"
+          dek="Whatever your health goals, we can help you find the right solution."
         />
-        <CategoryGrid categories={orderedCategories} />
-        <div className="mt-8 flex justify-center">
+        <CategoryGrid categories={homeCategories} />
+        <div className="mt-10 flex justify-center">
           <ButtonLink href="/weight-loss" variant="secondary">
-            View all categories
+            View All Categories
             <ArrowRight className="h-4 w-4" aria-hidden />
           </ButtonLink>
         </div>
       </Section>
 
-      {/* ── Featured comparison cards ────────────────────────── */}
+      {/* ── 3 · Top-rated treatments ──────────────────────────── */}
       <Section tone="default">
         <SectionHeading
-          eyebrow="Top-rated treatments"
-          title="Carefully reviewed, clearly compared"
-          dek="A snapshot of providers that scored highly in our latest weight-loss comparison."
+          title="Top-rated treatments, carefully reviewed"
+          dek="Our highest-scoring providers, ranked by the same independent methodology."
         />
         <div className="grid gap-6 md:grid-cols-3">
-          {featured.map(({ entry, brand }) => (
-            <FeaturedCard
+          {topRated.map(({ entry, brand, rankLabel }) => (
+            <RankedCard
               key={brand.slug}
               entry={entry}
               brand={brand}
               categorySlug="weight-loss"
-              placement="home-featured"
+              rankLabel={rankLabel}
+              highlighted={entry.rank === 1}
             />
           ))}
         </div>
-        <div className="mt-8 flex justify-center">
-          <ButtonLink href="/weight-loss" variant="primary">
-            See the full weight-loss comparison
+        <div className="mt-10 flex justify-center">
+          <ButtonLink href="/weight-loss" variant="ghost">
+            View All Rankings
             <ArrowRight className="h-4 w-4" aria-hidden />
           </ButtonLink>
         </div>
+
+        {/* Rankings you can trust strip */}
+        <div className="mt-12">
+          <RankingWeightsBar />
+        </div>
       </Section>
 
-      {/* ── How we review ────────────────────────────────────── */}
-      <Section tone="tint">
+      {/* ── 4 · How we review ─────────────────────────────────── */}
+      <Section tone="muted">
         <SectionHeading
-          eyebrow="Our process"
           title="How we review every treatment"
           dek="The same rigorous, transparent process is applied to every provider — partner or not."
         />
         <HowWeReviewSteps steps={reviewSteps} />
       </Section>
 
-      {/* ── Trust bar ────────────────────────────────────────── */}
-      <Section tone="muted">
+      {/* ── 5 · Trust band ────────────────────────────────────── */}
+      <Section tone="default">
         <TrustBar
-          heading="Why thousands trust CompareTreatments"
+          heading="Why thousands trust CompareTreatments.com"
           stats={trustStats}
         />
       </Section>
 
-      {/* ── FAQ ──────────────────────────────────────────────── */}
-      <Section tone="default">
+      {/* ── 6 · FAQ ───────────────────────────────────────────── */}
+      <Section tone="muted">
         <Container className="max-w-3xl px-0">
-          <SectionHeading
-            eyebrow="Good to know"
-            title="Frequently asked questions"
-          />
+          <SectionHeading title="Frequently asked questions" />
           <FAQAccordion items={faqs} />
+          <div className="mt-8 flex justify-center">
+            <ButtonLink href="/how-we-review" variant="ghost">
+              View All FAQs
+              <ArrowRight className="h-4 w-4" aria-hidden />
+            </ButtonLink>
+          </div>
         </Container>
       </Section>
 

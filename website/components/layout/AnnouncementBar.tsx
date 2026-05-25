@@ -6,19 +6,20 @@ import { Container } from "./Container";
 export function AnnouncementBar() {
   return (
     <div className="bg-brand-900 text-white">
-      <Container className="flex items-center justify-center gap-2 py-2 text-center text-xs sm:text-[0.8rem]">
+      <Container className="flex items-center justify-center gap-2 py-2.5 text-center text-xs sm:text-[0.8125rem]">
         <ShieldCheck
           className="hidden h-4 w-4 shrink-0 text-brand-100 sm:block"
           aria-hidden
         />
         <span className="text-brand-100">
-          We only review and recommend trusted partners.
+          We only review and recommend trusted providers. Our rankings are
+          independent and editorially driven.
         </span>
         <Link
           href="/advertising-disclosure"
-          className="font-semibold text-white underline underline-offset-2 hover:text-brand-100"
+          className="hidden font-semibold text-white underline underline-offset-2 hover:text-brand-100 sm:inline"
         >
-          Advertising disclosure
+          Learn more
         </Link>
       </Container>
     </div>
