@@ -1,8 +1,12 @@
 import type { MetadataRoute } from "next";
 import { SITE } from "@/lib/site";
 import { categories } from "@/lib/data/categories";
+import { brandReviews } from "@/lib/data/reviews";
 
-/** Generates sitemap.xml — enumerates the homepage and all category hubs. */
+/**
+ * Generates sitemap.xml — enumerates the homepage, all category hubs
+ * and every brand review.
+ */
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
@@ -22,5 +26,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  return [...staticRoutes, ...categoryRoutes];
+  const reviewRoutes: MetadataRoute.Sitemap = brandReviews.map((review) => ({
+    url: `${SITE.url}/${review.categorySlug}/reviews/${review.brandSlug}`,
+    lastModified: new Date(review.dateModified),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  return [...staticRoutes, ...categoryRoutes, ...reviewRoutes];
 }

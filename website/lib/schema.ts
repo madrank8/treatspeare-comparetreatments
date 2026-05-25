@@ -4,7 +4,13 @@
  * content (a Google requirement — architecture §8).
  */
 import { SITE } from "@/lib/site";
-import type { FAQ, RankingTable, TreatmentCategory } from "@/types";
+import type {
+  Author,
+  BrandReview,
+  FAQ,
+  RankingTable,
+  TreatmentCategory,
+} from "@/types";
 import { getBrand } from "@/lib/data/brands";
 
 type JsonLdObject = Record<string, unknown>;
@@ -135,5 +141,94 @@ export function buildMedicalWebPageSchema(opts: {
       "@type": "Person",
       name: opts.reviewerName,
     },
+  };
+}
+
+/** Build a Person node from an Author — used as author / reviewedBy. */
+function buildPersonNode(author: Author): JsonLdObject {
+  const node: JsonLdObject = {
+    "@type": "Person",
+    name: author.name,
+    jobTitle: author.jobTitle,
+  };
+  if (author.credentials) node.honorificSuffix = author.credentials;
+  if (author.sameAs.length > 0) node.sameAs = author.sameAs;
+  return node;
+}
+
+/**
+ * AggregateRating — derived from a brand review's overall score.
+ * Scores are on a 0–10 scale.
+ */
+export function buildAggregateRatingSchema(review: BrandReview): JsonLdObject {
+  return {
+    "@context": "https://schema.org",
+    "@type": "AggregateRating",
+    ratingValue: review.overallScore,
+    bestRating: 10,
+    worstRating: 0,
+    ratingCount: review.ratingBreakdown.length,
+    reviewCount: 1,
+  };
+}
+
+/**
+ * Review — the editorial brand review, with itemReviewed, author and
+ * reviewRating. The reviewed entity is modelled as a MedicalBusiness.
+ */
+export function buildBrandReviewSchema(opts: {
+  review: BrandReview;
+  brandName: string;
+  brandWebsite: string;
+  path: string;
+  author: Author;
+}): JsonLdObject {
+  const { review, brandName, brandWebsite, path, author } = opts;
+  return {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "@id": `${SITE.url}${path}#review`,
+    name: review.title,
+    url: `${SITE.url}${path}`,
+    datePublished: review.datePublished,
+    dateModified: review.dateModified,
+    itemReviewed: {
+      "@type": "MedicalBusiness",
+      name: brandName,
+      url: brandWebsite,
+    },
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: review.overallScore,
+      bestRating: 10,
+      worstRating: 0,
+    },
+    author: buildPersonNode(author),
+    publisher: { "@id": `${SITE.url}/#organization` },
+  };
+}
+
+/**
+ * MedicalWebPage for a brand review — includes lastReviewed and a
+ * full reviewedBy Person node plus the page's AggregateRating.
+ */
+export function buildReviewMedicalWebPageSchema(opts: {
+  review: BrandReview;
+  path: string;
+  reviewer: Author;
+}): JsonLdObject {
+  const { review, path, reviewer } = opts;
+  return {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "@id": `${SITE.url}${path}#webpage`,
+    name: review.title,
+    description: review.metaDescription,
+    url: `${SITE.url}${path}`,
+    lastReviewed: review.lastReviewed,
+    datePublished: review.datePublished,
+    dateModified: review.dateModified,
+    reviewedBy: buildPersonNode(reviewer),
+    isPartOf: { "@id": `${SITE.url}/#website` },
   };
 }

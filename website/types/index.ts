@@ -54,6 +54,30 @@ export interface Brand {
   brandColor: string;
 }
 
+/** A labeled sub-score in a review's rating breakdown. */
+export interface RatingSubScore {
+  label: string; // "Value", "Clinical Care", "Ease of Use"...
+  score: number; // 0–10, one decimal
+}
+
+/** One pricing tier shown in a brand review's PricingTable. */
+export interface PricingTier {
+  planName: string; // "Monthly", "3-Month plan"
+  price: number;
+  currency: "USD";
+  billingPeriod: string; // "per month", "per quarter"
+  notes?: string;
+  /** Optional flag — highlights the tier as the recommended one. */
+  highlighted?: boolean;
+}
+
+/** A typed H2 section of a review body. */
+export interface ReviewSection {
+  heading: string;
+  /** Paragraphs of body copy under the heading. */
+  paragraphs: string[];
+}
+
 /** Long-form editorial review of a Brand (one per brand+category). */
 export interface BrandReview {
   brandSlug: string;
@@ -61,15 +85,36 @@ export interface BrandReview {
   /** Path-only slug; full URL built from category. */
   slug: string;
   title: string;
-  heroSummary: string;
+  /** SEO metadata. */
+  metaTitle: string;
+  metaDescription: string;
+  /** 2-paragraph hero summary. */
+  heroSummary: string[];
+  /** One-line verdict shown beside the hero rating. */
+  oneLineVerdict: string;
   overallScore: number; // 0–10, one decimal
   starRating: number; // 0–5, half-steps
   scoreLabel: ScoreLabel;
+  /** 4–6 labeled sub-scores. */
+  ratingBreakdown: RatingSubScore[];
+  /** Compact key facts for the at-a-glance box. */
+  atAGlance: { label: string; value: string }[];
   pros: string[];
   cons: string[];
+  pricing: PricingTier[];
+  /** The long-form review body — 3–4 H2 sections. */
+  body: ReviewSection[];
+  /** Closing verdict paragraph. */
+  verdict: string;
+  /** Author slug (writer/editor). */
+  authorSlug: string;
+  /** Medical reviewer slug. */
+  medicalReviewerSlug: string;
   datePublished: string; // ISO
   dateModified: string; // ISO
   lastReviewed: string; // ISO
+  /** Brand-specific FAQ slugs (resolved from lib/data/faqs.ts). */
+  faqSlugs: string[];
 }
 
 /** One entry in a hub's ranked offer chart -> renders one ComparisonCard. */

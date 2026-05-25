@@ -38,6 +38,39 @@ export const authors: Author[] = [
     yearsExperience: 10,
     sameAs: ["https://www.linkedin.com/in/example-james-okafor"],
   },
+  {
+    slug: "priya-raman",
+    name: "Priya Raman",
+    role: "writer",
+    credentials: "MS, RD",
+    jobTitle: "Health Writer & Registered Dietitian",
+    initials: "PR",
+    shortBio:
+      "Priya is a registered dietitian and health writer who covers metabolic health, GLP-1 treatments and telehealth. She writes our weight-loss brand reviews.",
+    affiliations: ["Academy of Nutrition and Dietetics"],
+    yearsExperience: 8,
+    sameAs: ["https://www.linkedin.com/in/example-priya-raman"],
+  },
+  {
+    slug: "dr-marcus-bell",
+    name: "Dr. Marcus Bell",
+    role: "medical-reviewer",
+    credentials: "MD",
+    jobTitle: "Board-Certified Internal Medicine Physician",
+    initials: "MB",
+    shortBio:
+      "Dr. Bell is a board-certified internal medicine physician with more than 12 years of clinical experience in primary and metabolic care. He reviews our brand reviews for clinical accuracy.",
+    licensure: ["Licensed in FL", "Licensed in IL", "Licensed in WA"],
+    affiliations: [
+      "American College of Physicians",
+      "The Obesity Society",
+    ],
+    yearsExperience: 12,
+    sameAs: [
+      "https://www.linkedin.com/in/example-marcus-bell",
+      "https://npiregistry.cms.hhs.gov/",
+    ],
+  },
 ];
 
 /** Look up an author by slug. */
