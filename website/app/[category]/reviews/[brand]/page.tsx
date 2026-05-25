@@ -107,6 +107,15 @@ export default async function BrandReviewPage({
     { name: brand.name, path },
   ];
 
+  // Affiliate disclosure shown beside the verdict CTA — the treatment
+  // wording is category-aware so the side-effect note is accurate.
+  const affiliateDisclaimer =
+    review.categorySlug === "ed"
+      ? "Affiliate link — we may earn a commission. Prescription ED medication is not suitable for everyone and carries side effects; a licensed clinician decides whether it is appropriate for you."
+      : review.categorySlug === "weight-loss"
+        ? "Affiliate link — we may earn a commission. GLP-1 treatment is not suitable for everyone and carries side effects; a licensed clinician decides whether it is appropriate for you."
+        : "Affiliate link — we may earn a commission. Treatment is not suitable for everyone and may carry side effects; a licensed clinician decides whether it is appropriate for you.";
+
   return (
     <>
       {/* ── Breadcrumbs ──────────────────────────────────────── */}
@@ -168,9 +177,7 @@ export default async function BrandReviewPage({
               />
             </div>
             <p className="mt-3 text-xs text-ink-500">
-              Affiliate link — we may earn a commission. GLP-1 treatment is
-              not suitable for everyone and carries side effects; a licensed
-              clinician decides whether it is appropriate for you.
+              {affiliateDisclaimer}
             </p>
           </div>
 

@@ -1069,6 +1069,680 @@ export const brandReviews: BrandReview[] = [
       "fridays-compounded",
     ],
   },
+
+  // ════════════════════════════════════════════════════════════
+  //  ED (erectile dysfunction) brand reviews
+  //  Scores, star ratings and labels are kept in sync with the ED
+  //  ranking table in lib/data/rankings.ts.
+  //
+  //  COMPLIANCE NOTE: ED reviews treat brand drug names (Viagra®,
+  //  Cialis®, Stendra®) descriptively only; generic names
+  //  (sildenafil, tadalafil, avanafil) are used freely. Copy frames
+  //  ED as a treatable medical condition — never around sexual
+  //  performance or pleasure. Outcomes are hedged, contraindications
+  //  (e.g. nitrates) noted, and copy states a licensed clinician
+  //  determines suitability. Any compounded product is never called
+  //  FDA-approved or described as equivalent to a brand-name drug.
+  // ════════════════════════════════════════════════════════════
+
+  // ── ED 1. Hims ────────────────────────────────────────────
+  {
+    brandSlug: "hims",
+    categorySlug: "ed",
+    slug: "hims",
+    title: "Hims ED Review 2026",
+    metaTitle: "Hims ED Review 2026: Pricing, Clinical Care, Pros & Cons",
+    metaDescription:
+      "Our in-depth Hims ED review for 2026: generic sildenafil and tadalafil pricing, clinical oversight, discretion, pros and cons, and who the service is best for.",
+    heroSummary: [
+      "Hims is an established men's telehealth platform that treats erectile dysfunction with clinician-prescribed generic sildenafil and tadalafil after a genuine online clinical review. It tops our 2026 ED comparison for pairing a large network of US-licensed clinicians with discreet shipping and flexible per-dose and monthly plans.",
+      "Reviewing the onboarding flow and published program details, we found Hims handles ED as the medical condition it is — intake screens for underlying causes, and a licensed clinician decides whether a prescription is appropriate. ED medication is not safe for everyone, and suitability is always a clinical decision.",
+    ],
+    oneLineVerdict:
+      "The most complete ED telehealth service in our comparison — strong clinical review, broad medication options, discreet delivery.",
+    overallScore: 9.5,
+    starRating: 5,
+    scoreLabel: "Excellent",
+    ratingBreakdown: [
+      { label: "Clinical care", score: 9.6 },
+      { label: "Treatment options", score: 9.5 },
+      { label: "Value", score: 9.3 },
+      { label: "Discretion", score: 9.6 },
+      { label: "Support", score: 9.4 },
+    ],
+    atAGlance: [
+      { label: "Price from", value: "$2/dose" },
+      { label: "Medication", value: "Generic sildenafil & tadalafil" },
+      { label: "Clinicians", value: "Large US-licensed network" },
+      { label: "Shipping", value: "Discreet, plainly labeled" },
+      { label: "Plans", value: "Per-dose and monthly options" },
+    ],
+    pros: [
+      "Genuine clinical review by US-licensed clinicians, not a checkout form",
+      "Generic sildenafil and tadalafil both available after a clinical review",
+      "Discreet, plainly labeled shipping on every order",
+      "Flexible per-dose and monthly plans to match how often you need treatment",
+      "Ongoing messaging to adjust the dose or switch medication",
+    ],
+    cons: [
+      "ED care sits within a broader membership rather than a single-focus service",
+      "Final cost depends on the medication and dose a clinician prescribes",
+      "Entirely remote — there is no in-person examination",
+    ],
+    pricing: [
+      {
+        planName: "Per-dose (generic sildenafil)",
+        price: 2,
+        currency: "USD",
+        billingPeriod: "per dose",
+        notes: "Generic sildenafil, priced per dose; final dose set by a clinician.",
+      },
+      {
+        planName: "Monthly plan",
+        price: 30,
+        currency: "USD",
+        billingPeriod: "per month",
+        notes: "Recurring monthly supply of clinician-prescribed generic ED medication.",
+        highlighted: true,
+      },
+      {
+        planName: "Daily tadalafil",
+        price: 70,
+        currency: "USD",
+        billingPeriod: "per month",
+        notes: "Low-dose daily generic tadalafil where a clinician determines it is appropriate.",
+      },
+    ],
+    body: [
+      {
+        heading: "How Hims ED treatment works",
+        paragraphs: [
+          "Getting started with Hims follows the standard telehealth path: you complete a confidential online health questionnaire covering your symptoms, medical history and any current medications, and a US-licensed clinician reviews it to decide whether a prescription is appropriate. Because erectile dysfunction can be a sign of an underlying condition such as cardiovascular disease or diabetes, that clinical review matters — it is not a formality.",
+          "If treatment is appropriate, the prescription is issued and shipped discreetly to your door. Hims also provides ongoing messaging with the care team, so you can ask about dosing, side effects or switching medication without booking a new visit.",
+        ],
+      },
+      {
+        heading: "Treatment options & pricing",
+        paragraphs: [
+          "Hims focuses on generic PDE5 inhibitors — generic sildenafil (the active ingredient in Viagra®) and generic tadalafil (the active ingredient in Cialis®). Sildenafil typically works for several hours, while tadalafil can last considerably longer and is sometimes prescribed as a low daily dose. A licensed clinician determines which medication, dose and schedule, if any, is appropriate for you.",
+          "Pricing is flexible. Generic sildenafil starts at around $2 per dose, monthly plans bundle a recurring supply from roughly $30 per month, and a low-dose daily tadalafil plan is available at around $70 per month. The per-dose and monthly structure lets you match the plan to how often you actually need treatment.",
+        ],
+      },
+      {
+        heading: "The telehealth experience",
+        paragraphs: [
+          "The Hims platform is polished and straightforward, with a clean dashboard for messaging your care team, managing refills and tracking your plan. As an established provider, it handles the logistics smoothly, and every order ships in plain, unbranded packaging — a genuine plus for anyone who values discretion.",
+          "Support is responsive, and the ability to message a clinician between visits makes it easy to adjust treatment over time. ED care is part of a broader men's health membership, which is convenient if you want other concerns handled in one place but means the service is not single-focus.",
+        ],
+      },
+      {
+        heading: "Who Hims is best for",
+        paragraphs: [
+          "Hims suits men who want a credible, well-supported ED service with a real clinical review and a clear choice of generic medications. The flexible per-dose and monthly plans make it a strong fit whether you need occasional or regular treatment.",
+          "If you want a service that focuses solely on ED, a dedicated provider may appeal more. ED medication carries side effects and is not safe for everyone — in particular, PDE5 inhibitors should not be taken with nitrate medications — and a licensed clinician determines whether treatment is appropriate.",
+        ],
+      },
+    ],
+    verdict:
+      "Hims tops our 2026 ED comparison because it does the fundamentals exceptionally well: a genuine clinical review by US-licensed clinicians, a clear choice of generic sildenafil and tadalafil, discreet shipping and flexible per-dose and monthly plans. ED care sits within a broader men's health membership rather than a single-focus service, and final cost depends on the prescribed medication and dose. For most men seeking a credible, well-supported ED service, Hims is our top recommendation — pending a licensed clinician confirming treatment is right for you.",
+    authorSlug: "priya-raman",
+    medicalReviewerSlug: "dr-marcus-bell",
+    datePublished: "2026-02-10",
+    dateModified: "2026-05-18",
+    lastReviewed: "2026-05-18",
+    faqSlugs: [
+      "hims-ed-prescription",
+      "hims-ed-medication",
+      "hims-ed-discretion",
+      "hims-ed-cost",
+    ],
+  },
+
+  // ── ED 2. BlueChew ────────────────────────────────────────
+  {
+    brandSlug: "bluechew",
+    categorySlug: "ed",
+    slug: "bluechew",
+    title: "BlueChew ED Review 2026",
+    metaTitle: "BlueChew ED Review 2026: Chewable Tablets, Pricing & Pros",
+    metaDescription:
+      "Our BlueChew ED review for 2026: clinician-prescribed chewable sildenafil and tadalafil, discreet monthly delivery, pricing, pros, cons and who it suits.",
+    heroSummary: [
+      "BlueChew is a telehealth ED service known for clinician-prescribed chewable tablets containing sildenafil or tadalafil, delivered discreetly each month. It ranks second in our 2026 ED comparison and is our Most Popular pick for men who prefer a chewable format over a standard tablet.",
+      "Reviewing its onboarding and program details, we found BlueChew's defining feature is the chewable delivery — a format some men simply find more convenient. The active ingredients are the same PDE5 inhibitors used widely in ED treatment, and a licensed clinician reviews your intake to decide whether a prescription is appropriate.",
+    ],
+    oneLineVerdict:
+      "A popular chewable ED service with a simple monthly subscription — convenient for men who prefer not to swallow a tablet.",
+    overallScore: 9.2,
+    starRating: 4.5,
+    scoreLabel: "Excellent",
+    ratingBreakdown: [
+      { label: "Ease of use", score: 9.5 },
+      { label: "Clinical care", score: 9.1 },
+      { label: "Value", score: 9.0 },
+      { label: "Discretion", score: 9.3 },
+      { label: "Support", score: 9.0 },
+    ],
+    atAGlance: [
+      { label: "Price from", value: "$20/mo" },
+      { label: "Medication", value: "Chewable sildenafil & tadalafil" },
+      { label: "Format", value: "Chewable tablets" },
+      { label: "Delivery", value: "Discreet monthly subscription" },
+      { label: "Intake", value: "Online, clinician-reviewed" },
+    ],
+    pros: [
+      "Clinician-prescribed chewable format, an alternative to standard tablets",
+      "Simple monthly subscription with discreet delivery",
+      "Online intake reviewed by a licensed clinician",
+      "Both sildenafil and tadalafil active ingredients available",
+      "Accessible starting price for an entry-level plan",
+    ],
+    cons: [
+      "Chewable tablets are a single format — there is no standard-tablet option",
+      "Subscription model is less suited to very occasional use",
+      "ED-focused, so it does not cover other men's health concerns",
+    ],
+    pricing: [
+      {
+        planName: "Active plan",
+        price: 20,
+        currency: "USD",
+        billingPeriod: "per month",
+        notes: "Entry-level chewable plan; tablet count and dose set after a clinical review.",
+        highlighted: true,
+      },
+      {
+        planName: "Busy plan",
+        price: 50,
+        currency: "USD",
+        billingPeriod: "per month",
+        notes: "Larger monthly supply of clinician-prescribed chewable tablets.",
+      },
+      {
+        planName: "Pro plan",
+        price: 90,
+        currency: "USD",
+        billingPeriod: "per month",
+        notes: "Highest-volume monthly plan where clinically appropriate.",
+      },
+    ],
+    body: [
+      {
+        heading: "How BlueChew works",
+        paragraphs: [
+          "BlueChew keeps onboarding simple. You complete an online health questionnaire about your symptoms, medical history and current medications, and a licensed clinician reviews it to decide whether a prescription is appropriate. There is no in-person visit, and treatment is only issued when a clinician determines it is suitable.",
+          "What sets BlueChew apart is the format. Rather than a standard tablet, its medication comes as a chewable tablet — some men find this easier or more discreet to take. The active ingredients are the familiar PDE5 inhibitors, and the service runs as a straightforward monthly subscription.",
+        ],
+      },
+      {
+        heading: "Treatment options & pricing",
+        paragraphs: [
+          "BlueChew offers chewable tablets containing sildenafil — the active ingredient in Viagra® — or tadalafil — the active ingredient in Cialis®. Sildenafil typically works for several hours; tadalafil can last considerably longer. Which active ingredient and dose, if any, is appropriate is a decision a licensed clinician makes during intake.",
+          "Pricing is tiered by volume. The entry-level Active plan starts at around $20 per month, the Busy plan at roughly $50 per month, and the Pro plan at around $90 per month, with the number of tablets and dose set by the prescribing clinician. The subscription model fits regular use better than very occasional treatment.",
+        ],
+      },
+      {
+        heading: "The telehealth experience",
+        paragraphs: [
+          "The BlueChew platform is quick and easy to navigate, with a simple intake flow and a clear subscription dashboard. Tablets are delivered discreetly to your door each month in plain packaging, and the care team is available for questions about dosing or side effects.",
+          "Because BlueChew focuses specifically on ED, the experience is streamlined around that one concern. The trade-off is breadth — it does not cover hair loss, skin or other men's health needs the way a multi-category platform does.",
+        ],
+      },
+      {
+        heading: "Who BlueChew is best for",
+        paragraphs: [
+          "BlueChew is best for men who specifically prefer a chewable tablet and want a simple, ED-focused monthly subscription. The tiered plans make it easy to match your supply to how often you need treatment.",
+          "If you would rather have a standard tablet, occasional per-dose pricing or a service that also covers other health concerns, another provider may suit you better. PDE5 inhibitors carry side effects and are not safe for everyone — notably they should not be combined with nitrate medications — and a licensed clinician determines suitability.",
+        ],
+      },
+    ],
+    verdict:
+      "BlueChew earns its Most Popular badge with a clear, differentiated offer: clinician-prescribed chewable sildenafil and tadalafil delivered through a simple monthly subscription. For men who prefer a chewable format, it is a genuinely convenient option, and the tiered plans keep pricing flexible. The chewable format is the only option, the subscription suits regular more than occasional use, and the service is ED-focused. Recommended for men who want a chewable ED treatment — once a licensed clinician confirms it is appropriate for you.",
+    authorSlug: "priya-raman",
+    medicalReviewerSlug: "dr-elena-marsh",
+    datePublished: "2026-02-14",
+    dateModified: "2026-05-16",
+    lastReviewed: "2026-05-16",
+    faqSlugs: [
+      "bluechew-chewable",
+      "bluechew-prescription",
+      "bluechew-plans",
+    ],
+  },
+
+  // ── ED 3. Rex MD ──────────────────────────────────────────
+  {
+    brandSlug: "rex-md",
+    categorySlug: "ed",
+    slug: "rex-md",
+    title: "Rex MD ED Review 2026",
+    metaTitle: "Rex MD ED Review 2026: Men's ED Care, Pricing & Pros",
+    metaDescription:
+      "Our Rex MD ED review for 2026: clinician-prescribed PDE5 inhibitors, ongoing dosing support, discreet shipping, pricing, pros, cons and who it suits.",
+    heroSummary: [
+      "Rex MD is a men's telehealth provider with a strong erectile dysfunction focus, offering clinician-prescribed PDE5 inhibitors alongside ongoing support for dosing questions. It ranks third in our 2026 ED comparison for combining a clear ED specialty with responsive aftercare.",
+      "Reviewing the program, we found Rex MD treats ED as a medical condition that warrants genuine clinical attention — its intake screens for underlying causes, and a licensed clinician decides whether a prescription is appropriate. Flexible plans and discreet shipping round out a solid, ED-centered service.",
+    ],
+    oneLineVerdict:
+      "An ED-focused men's provider with clinician-prescribed PDE5 inhibitors and strong ongoing dosing support.",
+    overallScore: 9.0,
+    starRating: 4.5,
+    scoreLabel: "Excellent",
+    ratingBreakdown: [
+      { label: "Clinical care", score: 9.2 },
+      { label: "Treatment options", score: 9.0 },
+      { label: "Support", score: 9.1 },
+      { label: "Value", score: 8.7 },
+      { label: "Discretion", score: 9.0 },
+    ],
+    atAGlance: [
+      { label: "Price from", value: "$3/dose" },
+      { label: "Medication", value: "Clinician-prescribed PDE5 inhibitors" },
+      { label: "Focus", value: "Strong ED specialty" },
+      { label: "Support", value: "Ongoing dosing guidance" },
+      { label: "Shipping", value: "Discreet, flexible plans" },
+    ],
+    pros: [
+      "Clear ED specialty with clinician-prescribed sildenafil and tadalafil",
+      "Strong ongoing support for dosing questions between visits",
+      "Discreet shipping and flexible per-dose and monthly plans",
+      "Genuine clinical review by licensed prescribers",
+      "Streamlined online intake designed around ED care",
+    ],
+    cons: [
+      "Mid-range per-dose pricing rather than the cheapest in our comparison",
+      "Final cost depends on the medication and dose prescribed",
+      "Entirely remote — there is no in-person examination",
+    ],
+    pricing: [
+      {
+        planName: "Per-dose (generic sildenafil)",
+        price: 3,
+        currency: "USD",
+        billingPeriod: "per dose",
+        notes: "Generic sildenafil, priced per dose; final dose set by a clinician.",
+      },
+      {
+        planName: "Monthly plan",
+        price: 40,
+        currency: "USD",
+        billingPeriod: "per month",
+        notes: "Recurring monthly supply of clinician-prescribed ED medication.",
+        highlighted: true,
+      },
+      {
+        planName: "Daily tadalafil",
+        price: 75,
+        currency: "USD",
+        billingPeriod: "per month",
+        notes: "Low-dose daily generic tadalafil where a clinician determines it is appropriate.",
+      },
+    ],
+    body: [
+      {
+        heading: "How Rex MD works",
+        paragraphs: [
+          "Rex MD follows a clinician-led model built around men's health, with erectile dysfunction as a core focus. You complete an online health questionnaire covering symptoms, medical history and current medications, and a licensed clinician reviews it to decide whether a prescription is appropriate. ED can be linked to underlying conditions, so the clinical review is a genuine step rather than a checkout formality.",
+          "Once treatment is issued, Rex MD emphasizes ongoing support — the care team is available for dosing questions, side-effect concerns and adjustments, which helps men get treatment dialed in over time.",
+        ],
+      },
+      {
+        heading: "Treatment options & pricing",
+        paragraphs: [
+          "Rex MD prescribes PDE5 inhibitors — generic sildenafil (the active ingredient in Viagra®) and generic tadalafil (the active ingredient in Cialis®). Sildenafil typically works for several hours, while tadalafil lasts considerably longer and may be prescribed as a low daily dose. A licensed clinician determines which medication, dose and schedule, if any, fits your situation.",
+          "Generic sildenafil starts at around $3 per dose, monthly plans from roughly $40 per month, and a daily tadalafil plan at around $75 per month. Pricing is mid-range — not the cheapest in our comparison — and the final cost depends on what a clinician prescribes.",
+        ],
+      },
+      {
+        heading: "The telehealth experience",
+        paragraphs: [
+          "The Rex MD platform is streamlined around ED care, with a quick intake and a clear dashboard for managing your plan and messaging the care team. Orders ship discreetly in plain packaging.",
+          "The standout is aftercare. Because Rex MD specializes in ED, its support is geared toward the questions that actually come up — how a dose is working, whether to adjust it, or whether to switch medication. That ongoing guidance gives the service a more attentive feel than a one-and-done prescription.",
+        ],
+      },
+      {
+        heading: "Who Rex MD is best for",
+        paragraphs: [
+          "Rex MD is best for men who want an ED-focused provider with strong ongoing support and a clear choice of clinician-prescribed PDE5 inhibitors. The flexible plans and attentive aftercare make it a good fit if you expect to fine-tune your treatment.",
+          "If your single priority is the lowest per-dose price, a value-focused provider may cost less. PDE5 inhibitors have side effects and are not safe for everyone — they should not be taken with nitrate medications — and a licensed clinician makes the suitability decision during intake.",
+        ],
+      },
+    ],
+    verdict:
+      "Rex MD is a credible, ED-focused choice that pairs clinician-prescribed PDE5 inhibitors with genuinely strong ongoing support. Its clear ED specialty, flexible plans and attentive aftercare are real strengths. Per-dose pricing is mid-range rather than the lowest in our comparison, and the final cost depends on the prescribed medication and dose. For men who want an ED-centered service with responsive dosing guidance, Rex MD is a solid recommendation — pending a licensed clinician confirming treatment is right for you.",
+    authorSlug: "priya-raman",
+    medicalReviewerSlug: "dr-marcus-bell",
+    datePublished: "2026-02-18",
+    dateModified: "2026-05-15",
+    lastReviewed: "2026-05-15",
+    faqSlugs: [
+      "rex-md-ed-focus",
+      "rex-md-support",
+      "rex-md-medication",
+    ],
+  },
+
+  // ── ED 4. UpGuys ──────────────────────────────────────────
+  {
+    brandSlug: "upguys",
+    categorySlug: "ed",
+    slug: "upguys",
+    title: "UpGuys ED Review 2026",
+    metaTitle: "UpGuys ED Review 2026: Discreet, Low-Cost ED Treatment",
+    metaDescription:
+      "Our UpGuys ED review for 2026: low-cost generic sildenafil and tadalafil, plain-package shipping, transparent per-dose pricing, pros, cons and who it suits.",
+    heroSummary: [
+      "UpGuys is an online ED clinic offering generic sildenafil and tadalafil after a licensed clinician review, with plain-package shipping and transparent per-dose pricing. It earns our Best Value badge as the most affordable option in the 2026 ED comparison.",
+      "Reviewing its onboarding and program details, we found UpGuys delivers a streamlined, price-first experience. The trade-off for that low price is a leaner service — there is less of the ongoing support depth that higher-ranked providers offer. A licensed clinician still reviews your intake and decides whether treatment is appropriate.",
+    ],
+    oneLineVerdict:
+      "The lowest per-dose ED pricing in our comparison — a strong value pick for cost-focused, self-directed men.",
+    overallScore: 8.6,
+    starRating: 4.5,
+    scoreLabel: "Great",
+    ratingBreakdown: [
+      { label: "Value", score: 9.2 },
+      { label: "Discretion", score: 9.0 },
+      { label: "Ease of use", score: 8.7 },
+      { label: "Clinical care", score: 8.4 },
+      { label: "Support", score: 8.2 },
+    ],
+    atAGlance: [
+      { label: "Price from", value: "$2/dose" },
+      { label: "Medication", value: "Generic sildenafil & tadalafil" },
+      { label: "Pricing", value: "Transparent per-dose" },
+      { label: "Shipping", value: "Plain-package delivery" },
+      { label: "Intake", value: "Online, clinician-reviewed" },
+    ],
+    pros: [
+      "Lowest per-dose ED pricing in our comparison",
+      "Transparent per-dose pricing with no membership fee",
+      "Plain-package shipping for privacy",
+      "Generic sildenafil and tadalafil after a licensed clinician review",
+      "Simple, fast onboarding designed for self-directed men",
+    ],
+    cons: [
+      "Leaner ongoing support than higher-ranked providers",
+      "ED-focused, so it does not cover other men's health concerns",
+      "Less hand-holding suits men comfortable managing their own care",
+    ],
+    pricing: [
+      {
+        planName: "Per-dose (generic sildenafil)",
+        price: 2,
+        currency: "USD",
+        billingPeriod: "per dose",
+        notes: "Generic sildenafil at the lowest per-dose price in our comparison.",
+        highlighted: true,
+      },
+      {
+        planName: "Per-dose (generic tadalafil)",
+        price: 3,
+        currency: "USD",
+        billingPeriod: "per dose",
+        notes: "Generic tadalafil, priced per dose; final dose set by a clinician.",
+      },
+    ],
+    body: [
+      {
+        heading: "How UpGuys works",
+        paragraphs: [
+          "UpGuys keeps onboarding deliberately simple. You complete an online health questionnaire about your symptoms, medical history and current medications, and a licensed clinician reviews it to decide whether a prescription is appropriate. Treatment is only issued when a clinician determines it is suitable.",
+          "The model is built for self-directed men who want straightforward, low-cost access to ED treatment without extra services layered on top. That focus is what keeps the price low — but it also means you should be comfortable managing more of the process yourself.",
+        ],
+      },
+      {
+        heading: "Treatment options & pricing",
+        paragraphs: [
+          "UpGuys offers generic sildenafil (the active ingredient in Viagra®) and generic tadalafil (the active ingredient in Cialis®). Sildenafil typically works for several hours, while tadalafil lasts considerably longer. A licensed clinician determines which medication and dose, if any, is appropriate for you.",
+          "Price is the headline. Generic sildenafil starts at around $2 per dose and generic tadalafil at roughly $3 per dose — the lowest figures in our comparison — with transparent per-dose pricing and no membership fee. You pay for what you order.",
+        ],
+      },
+      {
+        heading: "The telehealth experience",
+        paragraphs: [
+          "The UpGuys platform is clean and quick to navigate, with a fast intake and clear per-dose pricing. Orders ship in plain, unbranded packaging, which is a genuine plus for anyone who values discretion.",
+          "Support is solid but leaner than what higher-ranked providers offer — there is less ongoing dosing guidance and aftercare. Many men find the streamlined experience a fair trade for the lower price, provided they do not need extra hand-holding.",
+        ],
+      },
+      {
+        heading: "Who UpGuys is best for",
+        paragraphs: [
+          "UpGuys is best for cost-conscious, self-directed men who want low-cost generic ED treatment with transparent per-dose pricing and discreet shipping. If price is your primary deciding factor, it is the strongest pick in our comparison.",
+          "If you want deeper ongoing support, occasional dosing guidance or a service that also covers other health concerns, a more comprehensive provider will serve you better. PDE5 inhibitors carry side effects and are not safe for everyone — they should not be taken with nitrate medications — and a licensed clinician determines suitability.",
+        ],
+      },
+    ],
+    verdict:
+      "UpGuys wins our Best Value spot by offering the lowest per-dose ED pricing in the 2026 comparison without cutting the essentials — a genuine clinical review by a licensed clinician and discreet, plain-package shipping are still part of the package. The trade-off is a leaner experience with less ongoing support, and the service focuses solely on ED. For cost-focused, self-directed men, UpGuys is an excellent choice once a licensed clinician confirms treatment is appropriate.",
+    authorSlug: "priya-raman",
+    medicalReviewerSlug: "dr-elena-marsh",
+    datePublished: "2026-02-22",
+    dateModified: "2026-05-14",
+    lastReviewed: "2026-05-14",
+    faqSlugs: [
+      "upguys-pricing",
+      "upguys-discretion",
+      "upguys-prescription",
+    ],
+  },
+
+  // ── ED 5. Ro ──────────────────────────────────────────────
+  {
+    brandSlug: "ro",
+    categorySlug: "ed",
+    slug: "ro",
+    title: "Ro ED Review 2026",
+    metaTitle: "Ro ED Review 2026: Full-Service ED Telehealth, Pricing & Pros",
+    metaDescription:
+      "Our Ro ED review for 2026: an established full-service telehealth provider treating ED with clinician-prescribed medication and pharmacy fulfillment. Pricing and pros.",
+    heroSummary: [
+      "Ro is an established, full-service telehealth provider that treats erectile dysfunction with clinician-prescribed medication, pharmacy fulfillment and a clinical review of possible underlying causes. It ranks fifth in our 2026 ED comparison as part of a broader, mature men's health platform.",
+      "Reviewing the platform, we found Ro's long operating history and full-service model to be its defining traits. Its intake looks beyond symptoms to possible underlying causes, and a licensed clinician determines whether treatment is appropriate. Per-dose pricing is at the higher end, reflecting the established platform.",
+    ],
+    oneLineVerdict:
+      "An established full-service provider treating ED within a broader men's health platform — mature, with higher per-dose pricing.",
+    overallScore: 8.4,
+    starRating: 4,
+    scoreLabel: "Great",
+    ratingBreakdown: [
+      { label: "Clinical care", score: 8.8 },
+      { label: "Treatment options", score: 8.5 },
+      { label: "Discretion", score: 8.5 },
+      { label: "Value", score: 7.8 },
+      { label: "Support", score: 8.3 },
+    ],
+    atAGlance: [
+      { label: "Price from", value: "$5/dose" },
+      { label: "Medication", value: "Clinician-prescribed PDE5 inhibitors" },
+      { label: "Fulfillment", value: "Pharmacy fulfillment" },
+      { label: "Provider", value: "Established full-service telehealth" },
+      { label: "Intake", value: "Reviews possible underlying causes" },
+    ],
+    pros: [
+      "Established, full-service telehealth provider with a long track record",
+      "Clinical review looks at possible underlying causes of ED",
+      "Clinician-prescribed sildenafil and tadalafil with pharmacy fulfillment",
+      "Part of a broader men's health platform under one account",
+      "Mature, well-built platform and consistent support",
+    ],
+    cons: [
+      "Highest per-dose starting price in our ED comparison",
+      "ED care sits within a broad platform rather than a single-focus service",
+      "Final cost depends on the medication and dose a clinician prescribes",
+    ],
+    pricing: [
+      {
+        planName: "Per-dose (generic sildenafil)",
+        price: 5,
+        currency: "USD",
+        billingPeriod: "per dose",
+        notes: "Generic sildenafil via pharmacy fulfillment; final dose set by a clinician.",
+      },
+      {
+        planName: "Monthly plan",
+        price: 45,
+        currency: "USD",
+        billingPeriod: "per month",
+        notes: "Recurring monthly supply of clinician-prescribed ED medication.",
+        highlighted: true,
+      },
+      {
+        planName: "Daily tadalafil",
+        price: 85,
+        currency: "USD",
+        billingPeriod: "per month",
+        notes: "Low-dose daily generic tadalafil where a clinician determines it is appropriate.",
+      },
+    ],
+    body: [
+      {
+        heading: "How Ro treats ED",
+        paragraphs: [
+          "Ro is a full-service telehealth company that has operated across several health categories for years, and ED is one part of its men's health offering. You complete an online health questionnaire, and a licensed clinician reviews it to decide whether a prescription is appropriate. Ro's intake is notable for looking at possible underlying causes of ED, not just symptoms — a useful approach given that ED can signal other health issues.",
+          "If treatment is appropriate, the prescription is filled through pharmacy fulfillment and shipped to you. The provider's maturity shows in a polished, established process.",
+        ],
+      },
+      {
+        heading: "Treatment options & pricing",
+        paragraphs: [
+          "Ro prescribes PDE5 inhibitors — generic sildenafil (the active ingredient in Viagra®) and generic tadalafil (the active ingredient in Cialis®). Sildenafil typically works for several hours; tadalafil can last considerably longer and may be prescribed as a low daily dose. A licensed clinician determines which medication and dose, if any, is appropriate.",
+          "Generic sildenafil starts at around $5 per dose, monthly plans from roughly $45 per month, and a daily tadalafil plan at around $85 per month. That is the higher end of our ED comparison, reflecting Ro's established full-service platform and pharmacy fulfillment.",
+        ],
+      },
+      {
+        heading: "The telehealth experience",
+        paragraphs: [
+          "Ro's platform is mature and well-built, reflecting years of operation. Pharmacy fulfillment is handled smoothly, orders ship discreetly, and the support experience is consistent with an established provider.",
+          "Because Ro spans multiple health categories, ED care lives within a broader men's health platform — convenient if you want other concerns handled under one account, but it means the service is not single-focus. The main trade-off is price: Ro is the most expensive per-dose starting point in our ED comparison.",
+        ],
+      },
+      {
+        heading: "Who Ro is best for",
+        paragraphs: [
+          "Ro is best for men who value an established, full-service provider and a clinical review that considers possible underlying causes of ED. If you want ED care alongside other men's health needs under one mature platform, Ro is a clear fit.",
+          "If your priority is the lowest per-dose price, a value-focused provider will cost considerably less. PDE5 inhibitors have side effects and are not safe for everyone — they should not be taken with nitrate medications — and a licensed clinician makes the suitability decision.",
+        ],
+      },
+    ],
+    verdict:
+      "Ro is an established, credible choice for men who want ED treatment from a mature, full-service telehealth platform. Its long operating history, pharmacy fulfillment and a clinical review that considers possible underlying causes set it apart. The trade-offs are cost — Ro has the highest per-dose starting price in our ED comparison — and that ED care sits within a broad platform rather than a single-focus service. Recommended for men who value an established provider — once a licensed clinician confirms treatment is right for you.",
+    authorSlug: "priya-raman",
+    medicalReviewerSlug: "dr-marcus-bell",
+    datePublished: "2026-02-26",
+    dateModified: "2026-05-13",
+    lastReviewed: "2026-05-13",
+    faqSlugs: [
+      "ro-ed-underlying-causes",
+      "ro-ed-medication",
+      "ro-ed-experience",
+    ],
+  },
+
+  // ── ED 6. Phoenix ─────────────────────────────────────────
+  {
+    brandSlug: "phoenix-ed",
+    categorySlug: "ed",
+    slug: "phoenix-ed",
+    title: "Phoenix ED Review 2026",
+    metaTitle: "Phoenix ED Review 2026: Personalized ED Plans, Pricing & Pros",
+    metaDescription:
+      "Our Phoenix ED review for 2026: licensed clinicians building personalized PDE5 inhibitor plans, discreet delivery, clear pricing, pros, cons and who it suits.",
+    heroSummary: [
+      "Phoenix is a telehealth ED service that connects men with licensed clinicians to build a personalized PDE5 inhibitor plan, with a straightforward online intake and discreet delivery. It rounds out our 2026 ED comparison at sixth and earns a New badge as a recently launched option.",
+      "Reviewing the program, we found Phoenix focused on personalization — its intake feeds into a clinician-built plan rather than a one-size-fits-all prescription. As a newer provider, it has a shorter track record than its competitors. A licensed clinician determines whether treatment is appropriate during intake.",
+    ],
+    oneLineVerdict:
+      "A newer ED service built around clinician-personalized PDE5 inhibitor plans — straightforward, with a shorter track record.",
+    overallScore: 8.1,
+    starRating: 4,
+    scoreLabel: "Great",
+    ratingBreakdown: [
+      { label: "Treatment options", score: 8.4 },
+      { label: "Ease of use", score: 8.3 },
+      { label: "Clinical care", score: 8.1 },
+      { label: "Discretion", score: 8.0 },
+      { label: "Value", score: 7.8 },
+    ],
+    atAGlance: [
+      { label: "Price from", value: "$4/dose" },
+      { label: "Medication", value: "Personalized PDE5 inhibitor plans" },
+      { label: "Approach", value: "Clinician-built treatment plan" },
+      { label: "Intake", value: "Straightforward online questionnaire" },
+      { label: "Shipping", value: "Discreet delivery" },
+    ],
+    pros: [
+      "Licensed clinicians build a personalized PDE5 inhibitor plan",
+      "Straightforward, quick online intake",
+      "Discreet delivery and clear per-dose pricing",
+      "Both sildenafil and tadalafil options available after a clinical review",
+      "Plan-based approach rather than a one-size-fits-all prescription",
+    ],
+    cons: [
+      "Newer provider with a shorter track record than competitors",
+      "Support depth is lighter than higher-ranked providers",
+      "ED-focused, so it does not cover other men's health concerns",
+    ],
+    pricing: [
+      {
+        planName: "Per-dose (generic sildenafil)",
+        price: 4,
+        currency: "USD",
+        billingPeriod: "per dose",
+        notes: "Generic sildenafil, priced per dose; final dose set within your plan.",
+      },
+      {
+        planName: "Personalized monthly plan",
+        price: 42,
+        currency: "USD",
+        billingPeriod: "per month",
+        notes: "Clinician-built monthly ED plan tailored to your intake.",
+        highlighted: true,
+      },
+    ],
+    body: [
+      {
+        heading: "How Phoenix works",
+        paragraphs: [
+          "Phoenix keeps things simple. You complete a straightforward online health questionnaire about your symptoms, medical history and current medications, and a licensed clinician reviews it to decide whether treatment is appropriate. Treatment is only issued when a clinician determines it is suitable.",
+          "The distinguishing feature is personalization. Rather than a single default prescription, Phoenix uses your intake to build a clinician-personalized PDE5 inhibitor plan — the medication, dose and schedule are tailored to your situation. Orders are then delivered discreetly to your door.",
+        ],
+      },
+      {
+        heading: "Treatment options & pricing",
+        paragraphs: [
+          "Phoenix prescribes PDE5 inhibitors — generic sildenafil (the active ingredient in Viagra®) and generic tadalafil (the active ingredient in Cialis®). Sildenafil typically works for several hours, while tadalafil can last considerably longer. Which medication, dose and schedule, if any, is appropriate is determined by a licensed clinician as part of your personalized plan.",
+          "Generic sildenafil starts at around $4 per dose, and a personalized monthly plan from roughly $42 per month. Pricing is competitive and falls in the mid-range of our ED comparison.",
+        ],
+      },
+      {
+        heading: "The telehealth experience",
+        paragraphs: [
+          "The Phoenix platform is clean and the online intake is quick — getting started is genuinely simple. The plan-based model gives the service a more tailored feel than a flat, one-size-fits-all prescription, and orders ship discreetly in plain packaging.",
+          "As a newer provider, Phoenix has a shorter track record than the more established names in our comparison, and its support is lighter than higher-ranked providers. For men who value a personalized plan and are comfortable with a younger company, that is a reasonable trade.",
+        ],
+      },
+      {
+        heading: "Who Phoenix is best for",
+        paragraphs: [
+          "Phoenix is best for men who want a clinician-personalized ED plan with a quick intake and discreet delivery, and who do not mind that the provider is newer. The tailored, plan-based approach is its main draw.",
+          "If you want a longer track record, deeper ongoing support or a service that also covers other health concerns, an established provider will suit you better. PDE5 inhibitors carry side effects and are not safe for everyone — they should not be taken with nitrate medications — and a licensed clinician makes the suitability decision during intake.",
+        ],
+      },
+    ],
+    verdict:
+      "Phoenix is a capable newer entrant that does the basics well: a straightforward online intake, a clinician-personalized PDE5 inhibitor plan and discreet delivery at competitive mid-range pricing. The plan-based approach is a genuine differentiator. The trade-offs are a shorter track record, lighter support than higher-ranked providers, and an ED-only focus. Recommended for men who want a personalized ED plan — once a licensed clinician confirms treatment is right for you.",
+    authorSlug: "priya-raman",
+    medicalReviewerSlug: "dr-elena-marsh",
+    datePublished: "2026-03-02",
+    dateModified: "2026-05-12",
+    lastReviewed: "2026-05-12",
+    faqSlugs: [
+      "phoenix-ed-personalized",
+      "phoenix-ed-new-provider",
+      "phoenix-ed-medication",
+    ],
+  },
 ];
 
 /** All {category, brand} pairs that have a review — for generateStaticParams. */

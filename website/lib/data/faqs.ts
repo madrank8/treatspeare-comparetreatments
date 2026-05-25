@@ -278,6 +278,132 @@ export const faqs: FAQ[] = [
       "Fridays offers compounded GLP-1 plans. Compounded semaglutide and tirzepatide are prepared by a licensed compounding pharmacy and are not FDA-approved finished products. A licensed clinician determines suitability.",
   },
 
+  // ── Hims ED review FAQs ────────────────────────────────────
+  {
+    slug: "hims-ed-prescription",
+    question: "Do I need an existing prescription to start ED treatment with Hims?",
+    answer:
+      "No. Hims connects you with a US-licensed clinician who reviews your online health questionnaire and decides whether a prescription is appropriate. You do not need a referral or an existing prescription to begin the intake process, and treatment is only issued when a clinician determines it is suitable.",
+  },
+  {
+    slug: "hims-ed-medication",
+    question: "What ED medication does Hims offer?",
+    answer:
+      "Hims offers clinician-prescribed generic sildenafil — the active ingredient in Viagra® — and generic tadalafil — the active ingredient in Cialis®. Both are PDE5 inhibitors. A licensed clinician determines which medication, dose and schedule, if any, is appropriate for you.",
+  },
+  {
+    slug: "hims-ed-discretion",
+    question: "Is Hims ED treatment shipped discreetly?",
+    answer:
+      "Hims ships orders in plain, unbranded packaging, and the intake process is confidential. Confidentiality practices can vary over time, so review the provider's current privacy and shipping details if discretion is important to you.",
+  },
+  {
+    slug: "hims-ed-cost",
+    question: "How much does ED treatment cost with Hims?",
+    answer:
+      "Hims offers flexible plans — generic sildenafil from around $2 per dose, recurring monthly plans from roughly $30 per month, and a low-dose daily tadalafil plan from around $85 per month. The final cost depends on the medication and dose a clinician prescribes; confirm current pricing with Hims before signing up.",
+  },
+
+  // ── BlueChew ED review FAQs ────────────────────────────────
+  {
+    slug: "bluechew-chewable",
+    question: "What is in BlueChew chewable tablets?",
+    answer:
+      "BlueChew chewable tablets contain sildenafil — the active ingredient in Viagra® — or tadalafil — the active ingredient in Cialis®. Both are PDE5 inhibitors. The chewable format is an alternative to a standard tablet; a licensed clinician determines which active ingredient and dose, if any, is appropriate.",
+  },
+  {
+    slug: "bluechew-prescription",
+    question: "Do I need a prescription to use BlueChew?",
+    answer:
+      "Yes — and BlueChew arranges it. You complete an online health questionnaire, and a licensed clinician reviews it to decide whether a prescription is appropriate. Treatment is only issued when a clinician determines it is suitable for you.",
+  },
+  {
+    slug: "bluechew-plans",
+    question: "How do BlueChew subscription plans work?",
+    answer:
+      "BlueChew uses tiered monthly plans — Active, Busy and Pro — that differ by the number of tablets supplied each month. The right plan depends on how often you need treatment, and the dose is set by the prescribing clinician. Confirm current plan details and pricing with BlueChew before subscribing.",
+  },
+
+  // ── Rex MD ED review FAQs ──────────────────────────────────
+  {
+    slug: "rex-md-ed-focus",
+    question: "Does Rex MD specialize in ED treatment?",
+    answer:
+      "Rex MD is a men's telehealth provider with a strong erectile dysfunction focus. Its intake and ongoing support are geared around ED care, with clinician-prescribed PDE5 inhibitors issued only when a licensed clinician determines treatment is appropriate.",
+  },
+  {
+    slug: "rex-md-support",
+    question: "What ongoing support does Rex MD provide?",
+    answer:
+      "Rex MD emphasizes aftercare — its care team is available for questions about dosing, side effects and whether to adjust or switch medication. This ongoing support helps men fine-tune treatment over time rather than receiving a one-and-done prescription.",
+  },
+  {
+    slug: "rex-md-medication",
+    question: "What ED medication does Rex MD prescribe?",
+    answer:
+      "Rex MD prescribes PDE5 inhibitors — generic sildenafil, the active ingredient in Viagra®, and generic tadalafil, the active ingredient in Cialis®. A licensed clinician determines which medication, dose and schedule, if any, is appropriate for you.",
+  },
+
+  // ── UpGuys ED review FAQs ──────────────────────────────────
+  {
+    slug: "upguys-pricing",
+    question: "How does UpGuys pricing work?",
+    answer:
+      "UpGuys uses transparent per-dose pricing with no membership fee — generic sildenafil from around $2 per dose and generic tadalafil from roughly $3 per dose. You pay for what you order; the final dose is set by a licensed clinician. Confirm current pricing with UpGuys before ordering.",
+  },
+  {
+    slug: "upguys-discretion",
+    question: "Does UpGuys ship ED treatment discreetly?",
+    answer:
+      "UpGuys ships orders in plain, unbranded packaging, and the intake process is confidential. Privacy practices can change, so review the provider's current shipping and data-handling details if discretion is important to you.",
+  },
+  {
+    slug: "upguys-prescription",
+    question: "Do I need a prescription to use UpGuys?",
+    answer:
+      "Yes — and UpGuys arranges it. You complete an online health questionnaire, and a licensed clinician reviews it to decide whether a prescription is appropriate. Treatment is only issued when a clinician determines it is suitable for you.",
+  },
+
+  // ── Ro ED review FAQs ──────────────────────────────────────
+  {
+    slug: "ro-ed-underlying-causes",
+    question: "Does Ro look at the underlying causes of ED?",
+    answer:
+      "Ro's intake is designed to consider possible underlying causes of erectile dysfunction, not just symptoms. Because ED can be associated with other health conditions, a licensed clinician reviews your health information as part of deciding whether treatment is appropriate.",
+  },
+  {
+    slug: "ro-ed-medication",
+    question: "What ED medication does Ro offer?",
+    answer:
+      "Ro prescribes PDE5 inhibitors — generic sildenafil, the active ingredient in Viagra®, and generic tadalafil, the active ingredient in Cialis® — filled through pharmacy fulfillment. A licensed clinician determines which medication and dose, if any, is appropriate for you.",
+  },
+  {
+    slug: "ro-ed-experience",
+    question: "Is Ro an established ED telehealth provider?",
+    answer:
+      "Ro is a well-known, full-service telehealth company that has operated across multiple health categories for several years. Its ED treatment is part of that broader men's health platform, so you can manage other concerns under the same account.",
+  },
+
+  // ── Phoenix ED review FAQs ─────────────────────────────────
+  {
+    slug: "phoenix-ed-personalized",
+    question: "What does a personalized ED plan from Phoenix involve?",
+    answer:
+      "Phoenix uses your online intake to build a clinician-personalized PDE5 inhibitor plan — the medication, dose and schedule are tailored to your situation rather than issued as a one-size-fits-all prescription. A licensed clinician determines what is appropriate as part of building the plan.",
+  },
+  {
+    slug: "phoenix-ed-new-provider",
+    question: "Phoenix is a newer ED provider — what should I keep in mind?",
+    answer:
+      "Phoenix launched more recently than some competitors, so it has a shorter track record. Its straightforward intake and personalized plan model are designed to be simple; weigh that against the longer history and deeper support of more established providers.",
+  },
+  {
+    slug: "phoenix-ed-medication",
+    question: "What ED medication does Phoenix prescribe?",
+    answer:
+      "Phoenix prescribes PDE5 inhibitors — generic sildenafil, the active ingredient in Viagra®, and generic tadalafil, the active ingredient in Cialis®. A licensed clinician determines which medication, dose and schedule, if any, is appropriate within your personalized plan.",
+  },
+
   // ── Men's Health hub FAQs ──────────────────────────────────
   {
     slug: "mens-health-what-covered",

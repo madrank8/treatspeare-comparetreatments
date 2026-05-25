@@ -423,7 +423,7 @@ export const rankingTables: Record<string, RankingTable> = {
         ],
         badges: ["editors-choice"],
         ctaLabel: "VISIT SITE",
-        hasReview: false,
+        hasReview: true,
         promo: {
           headline: "Free Online Visit",
           description:
@@ -445,7 +445,7 @@ export const rankingTables: Record<string, RankingTable> = {
         ],
         badges: ["most-popular"],
         ctaLabel: "VISIT SITE",
-        hasReview: false,
+        hasReview: true,
       },
       {
         brandSlug: "rex-md",
@@ -461,7 +461,7 @@ export const rankingTables: Record<string, RankingTable> = {
         ],
         badges: [],
         ctaLabel: "VISIT SITE",
-        hasReview: false,
+        hasReview: true,
       },
       {
         brandSlug: "upguys",
@@ -477,7 +477,7 @@ export const rankingTables: Record<string, RankingTable> = {
         ],
         badges: ["best-value"],
         ctaLabel: "VISIT SITE",
-        hasReview: false,
+        hasReview: true,
       },
       {
         brandSlug: "ro",
@@ -493,7 +493,7 @@ export const rankingTables: Record<string, RankingTable> = {
         ],
         badges: [],
         ctaLabel: "VISIT SITE",
-        hasReview: false,
+        hasReview: true,
       },
       {
         brandSlug: "phoenix-ed",
@@ -509,7 +509,7 @@ export const rankingTables: Record<string, RankingTable> = {
         ],
         badges: ["new"],
         ctaLabel: "VISIT SITE",
-        hasReview: false,
+        hasReview: true,
       },
     ],
   },
