@@ -209,6 +209,60 @@ export function buildBrandReviewSchema(opts: {
 }
 
 /**
+ * ProfilePage + Person — the author / medical-reviewer profile page.
+ * Emits a full Person node (with sameAs, jobTitle, hasCredential and
+ * knowsAbout) wrapped in a ProfilePage, per architecture §8.
+ */
+export function buildAuthorProfileSchema(opts: {
+  author: Author;
+  path: string;
+}): JsonLdObject {
+  const { author, path } = opts;
+  const url = `${SITE.url}${path}`;
+
+  const person: JsonLdObject = {
+    "@type": "Person",
+    "@id": `${url}#person`,
+    name: author.name,
+    url,
+    jobTitle: author.jobTitle,
+    description: author.shortBio,
+    worksFor: { "@id": `${SITE.url}/#organization` },
+  };
+  if (author.credentials) person.honorificSuffix = author.credentials;
+  if (author.sameAs.length > 0) person.sameAs = author.sameAs;
+  if (author.affiliations && author.affiliations.length > 0) {
+    person.memberOf = author.affiliations.map((name) => ({
+      "@type": "Organization",
+      name,
+    }));
+  }
+  if (author.education && author.education.length > 0) {
+    person.alumniOf = author.education.map((name) => ({
+      "@type": "EducationalOrganization",
+      name,
+    }));
+  }
+  if (author.credentials) {
+    person.hasCredential = {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "degree",
+      name: author.credentials,
+    };
+  }
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": `${url}#profilepage`,
+    name: `${author.name}${author.credentials ? `, ${author.credentials}` : ""}`,
+    url,
+    isPartOf: { "@id": `${SITE.url}/#website` },
+    mainEntity: person,
+  };
+}
+
+/**
  * MedicalWebPage for a brand review — includes lastReviewed and a
  * full reviewedBy Person node plus the page's AggregateRating.
  */

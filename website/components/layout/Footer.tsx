@@ -6,6 +6,7 @@ import { SiteLogo } from "./SiteLogo";
 
 const companyLinks = [
   { label: "About Us", href: "/about" },
+  { label: "Our Team", href: "/authors" },
   { label: "How We Review", href: "/how-we-review" },
   { label: "Contact", href: "/contact" },
 ];

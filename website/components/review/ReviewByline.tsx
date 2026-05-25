@@ -1,8 +1,10 @@
+import Link from "next/link";
 import { BadgeCheck, CalendarCheck, PenLine } from "lucide-react";
 import type { Author } from "@/types";
 import { formatDate } from "@/lib/utils";
+import { AuthorAvatar } from "@/components/eeat/AuthorAvatar";
 
-/** One person row inside the byline block. */
+/** One person row inside the byline block — links to the author page. */
 function PersonRow({
   author,
   role,
@@ -13,25 +15,23 @@ function PersonRow({
   icon: typeof PenLine;
 }) {
   return (
-    <div className="flex items-center gap-3">
-      <span
-        className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-brand-600 font-display text-base font-bold text-white"
-        aria-hidden
-      >
-        {author.initials}
-      </span>
+    <Link
+      href={`/authors/${author.slug}`}
+      className="group flex items-center gap-3"
+    >
+      <AuthorAvatar author={author} size="md" />
       <div className="min-w-0">
         <p className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-brand-600">
           <IconComp className="h-3.5 w-3.5" aria-hidden />
           {role}
         </p>
-        <p className="mt-0.5 text-sm font-semibold text-ink-900">
+        <p className="mt-0.5 text-sm font-semibold text-ink-900 group-hover:text-brand-600">
           {author.name}
           {author.credentials ? `, ${author.credentials}` : ""}
         </p>
         <p className="text-xs text-ink-500">{author.jobTitle}</p>
       </div>
-    </div>
+    </Link>
   );
 }
 

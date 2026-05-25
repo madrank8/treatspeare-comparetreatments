@@ -1,6 +1,8 @@
+import Link from "next/link";
 import { BadgeCheck, CalendarCheck } from "lucide-react";
 import type { Author } from "@/types";
 import { formatDate } from "@/lib/utils";
+import { AuthorAvatar } from "./AuthorAvatar";
 
 /**
  * "Medically reviewed by [Author], [credentials] · Last reviewed
@@ -16,12 +18,9 @@ export function MedicalReviewerByline({
   return (
     <div className="flex flex-col gap-4 rounded-lg border border-line-200 bg-brand-50 p-5 sm:flex-row sm:items-center">
       {/* Avatar */}
-      <span
-        className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-brand-600 font-display text-lg font-bold text-white"
-        aria-hidden
-      >
-        {reviewer.initials}
-      </span>
+      <Link href={`/authors/${reviewer.slug}`} className="shrink-0">
+        <AuthorAvatar author={reviewer} size="lg" />
+      </Link>
 
       <div className="flex-1">
         <p className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-brand-600">
@@ -30,10 +29,13 @@ export function MedicalReviewerByline({
         </p>
         <p className="mt-0.5 text-sm text-ink-700">
           Reviewed by{" "}
-          <span className="font-semibold text-ink-900">
+          <Link
+            href={`/authors/${reviewer.slug}`}
+            className="font-semibold text-ink-900 transition-colors hover:text-brand-600"
+          >
             {reviewer.name}
             {reviewer.credentials ? `, ${reviewer.credentials}` : ""}
-          </span>{" "}
+          </Link>{" "}
           — {reviewer.jobTitle}.
         </p>
         <p className="mt-1.5 flex items-center gap-1.5 text-xs text-ink-500">

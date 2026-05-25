@@ -197,10 +197,15 @@ export interface Author {
   role: "writer" | "editor" | "medical-reviewer";
   credentials?: string; // "MD", "RD, LDN"
   jobTitle: string;
+  /** 3–5 sentence full biography for the author profile page. */
+  bio: string;
+  /** Compact bio for bylines. */
   shortBio: string;
   /** Initials for the avatar placeholder. */
   initials: string;
   licensure?: string[];
+  /** Degrees / training, e.g. "MD, Johns Hopkins University School of Medicine". */
+  education?: string[];
   affiliations?: string[];
   yearsExperience?: number;
   sameAs: string[];
