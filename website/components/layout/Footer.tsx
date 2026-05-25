@@ -5,19 +5,19 @@ import { Container } from "./Container";
 import { SiteLogo } from "./SiteLogo";
 
 const companyLinks = [
-  { label: "About us", href: "/about" },
-  { label: "How we review", href: "/how-we-review" },
-  { label: "Our medical reviewers", href: "/about" },
+  { label: "About Us", href: "/about" },
+  { label: "How We Review", href: "/how-we-review" },
   { label: "Contact", href: "/contact" },
 ];
 
 const legalLinks = [
   { label: "Privacy Policy", href: "/privacy-policy" },
-  { label: "Terms of Use", href: "/terms-of-use" },
+  { label: "Terms of Service", href: "/terms-of-service" },
   { label: "Affiliate Disclosure", href: "/affiliate-disclosure" },
-  { label: "Advertising Disclosure", href: "/advertising-disclosure" },
   { label: "Medical Disclaimer", href: "/medical-disclaimer" },
-  { label: "Do Not Sell or Share My Info", href: "/privacy-policy" },
+  { label: "Cookie Policy", href: "/cookie-policy" },
+  { label: "Accessibility", href: "/accessibility" },
+  { label: "DMCA", href: "/dmca" },
 ];
 
 /** Site footer: link columns, disclosure text and copyright. */

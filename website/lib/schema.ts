@@ -97,6 +97,25 @@ export function buildFaqSchema(items: FAQ[]): JsonLdObject {
   };
 }
 
+/** WebPage — a standard informational page (legal / company pages). */
+export function buildWebPageSchema(opts: {
+  name: string;
+  description: string;
+  path: string;
+}): JsonLdObject {
+  const url = `${SITE.url}${opts.path}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${url}#webpage`,
+    name: opts.name,
+    description: opts.description,
+    url,
+    isPartOf: { "@id": `${SITE.url}/#website` },
+    publisher: { "@id": `${SITE.url}/#organization` },
+  };
+}
+
 /** MedicalWebPage — the YMYL signal Google's medical guidance rewards. */
 export function buildMedicalWebPageSchema(opts: {
   name: string;
