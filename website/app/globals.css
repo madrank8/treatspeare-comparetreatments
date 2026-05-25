@@ -94,13 +94,15 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  color: var(--color-ink-900);
-  font-family: var(--font-display);
-  text-wrap: balance;
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--color-ink-900);
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
 }
 
 /* Visible, accessible focus ring */

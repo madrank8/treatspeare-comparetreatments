@@ -1,38 +1,47 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { CategoryIcon } from "@/components/ui/Icon";
+import { cn } from "@/lib/utils";
 import type { HomeCategory } from "@/lib/data/site-content";
 
-/** One icon tile in the homepage "Explore treatments by category" grid. */
+/** One tile in the homepage "Explore treatments by category" grid. */
 export function CategoryTile({
   category,
+  className,
 }: {
   category: HomeCategory;
+  className?: string;
 }) {
   return (
     <Link
       href={category.href}
-      className="group relative flex flex-col rounded-xl border border-line-200 bg-white p-6 shadow-card transition-all hover:-translate-y-0.5 hover:border-brand-100 hover:shadow-card-hover"
+      className={cn(
+        "group relative flex flex-col rounded-2xl border border-line-200 bg-white p-7 shadow-card transition-all duration-200 hover:-translate-y-1 hover:border-brand-200 hover:shadow-card-hover",
+        className,
+      )}
     >
       {category.badge ? (
-        <span className="absolute right-4 top-4 inline-flex items-center rounded-full bg-rating-50 px-2.5 py-1 text-[0.6875rem] font-semibold uppercase tracking-wide text-rating-500">
+        <span className="absolute right-5 top-5 inline-flex items-center rounded-full bg-rating-50 px-2.5 py-1 text-[0.6875rem] font-semibold uppercase tracking-wide text-rating-500">
           {category.badge}
         </span>
       ) : null}
 
-      <span className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-brand-50 text-brand-600 transition-colors group-hover:bg-brand-600 group-hover:text-white">
-        <CategoryIcon name={category.icon} className="h-6 w-6" />
+      {/* Prominent category icon */}
+      <span className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-brand-50 text-brand-600 transition-colors duration-200 group-hover:bg-brand-600 group-hover:text-white">
+        <CategoryIcon name={category.icon} className="h-8 w-8" />
       </span>
-      <span className="font-display text-base font-bold text-ink-900">
+
+      <span className="font-display text-lg font-bold text-ink-900">
         {category.name}
       </span>
-      <span className="mt-1.5 flex-1 text-sm leading-snug text-ink-500">
+      <span className="mt-2 flex-1 text-sm leading-relaxed text-ink-500">
         {category.description}
       </span>
-      <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-600">
+
+      <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600">
         Compare
         <ArrowRight
-          className="h-4 w-4 transition-transform group-hover:translate-x-0.5"
+          className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1"
           aria-hidden
         />
       </span>
