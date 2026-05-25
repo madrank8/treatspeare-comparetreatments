@@ -38,11 +38,11 @@ export function HomeHero() {
           className="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-white via-white/90 to-transparent"
           aria-hidden
         />
-        <HeroStatCard className="absolute right-[10%] top-1/2 -translate-y-1/2" />
+        <HeroStatCard className="absolute bottom-12 right-10" />
       </div>
 
       <Container className="relative">
-        <div className="grid items-center gap-10 py-12 sm:py-14 lg:min-h-[600px] lg:grid-cols-2 lg:gap-8 lg:py-24">
+        <div className="grid items-center gap-10 py-12 sm:py-14 lg:min-h-[520px] lg:grid-cols-2 lg:gap-8 lg:py-20">
           {/* Copy */}
           <div className="relative z-10 max-w-xl">
             <h1 className="fluid-display text-brand-900">
