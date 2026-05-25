@@ -17,6 +17,7 @@ import { getBrand } from "@/lib/data/brands";
 import { getRankingTable } from "@/lib/data/rankings";
 import { getFaqs } from "@/lib/data/faqs";
 import type { RankingEntry } from "@/types";
+import type { AccentColor } from "@/lib/accent-colors";
 import {
   homeCategories,
   homepageFaqSlugs,
@@ -45,10 +46,29 @@ const topRatedPicks: {
   rankLabel: string;
   rank: number;
   score: number;
+  accent: AccentColor;
 }[] = [
-  { brandSlug: "trimrx", rankLabel: "Best Overall", rank: 1, score: 9.8 },
-  { brandSlug: "sunlightrx", rankLabel: "Best Value", rank: 2, score: 9.4 },
-  { brandSlug: "noom", rankLabel: "Best for Support", rank: 3, score: 9.1 },
+  {
+    brandSlug: "trimrx",
+    rankLabel: "Best Overall",
+    rank: 1,
+    score: 9.8,
+    accent: "amber",
+  },
+  {
+    brandSlug: "sunlightrx",
+    rankLabel: "Best Value",
+    rank: 2,
+    score: 9.4,
+    accent: "teal",
+  },
+  {
+    brandSlug: "noom",
+    rankLabel: "Best for Support",
+    rank: 3,
+    score: 9.1,
+    accent: "violet",
+  },
 ];
 
 export default function HomePage() {
@@ -56,7 +76,7 @@ export default function HomePage() {
 
   // Build the three top-rated cards from the weight-loss ranking.
   const topRated = topRatedPicks
-    .map(({ brandSlug, rankLabel, rank, score }) => {
+    .map(({ brandSlug, rankLabel, rank, score, accent }) => {
       const base = weightLoss?.entries.find(
         (e) => e.brandSlug === brandSlug,
       );
@@ -64,7 +84,7 @@ export default function HomePage() {
       if (!base || !brand) return null;
       // Homepage display entry — overrides rank/score for the curated row.
       const entry: RankingEntry = { ...base, rank, score };
-      return { entry, brand, rankLabel };
+      return { entry, brand, rankLabel, accent };
     })
     .filter((x): x is NonNullable<typeof x> => x !== null);
 
@@ -97,7 +117,7 @@ export default function HomePage() {
           dek="Our highest-scoring providers, ranked by the same independent methodology."
         />
         <div className="grid gap-6 md:grid-cols-3">
-          {topRated.map(({ entry, brand, rankLabel }) => (
+          {topRated.map(({ entry, brand, rankLabel, accent }) => (
             <RankedCard
               key={brand.slug}
               entry={entry}
@@ -105,6 +125,7 @@ export default function HomePage() {
               categorySlug="weight-loss"
               rankLabel={rankLabel}
               highlighted={entry.rank === 1}
+              accent={accent}
             />
           ))}
         </div>

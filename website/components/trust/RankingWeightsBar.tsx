@@ -1,6 +1,17 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { accentColors, type AccentColor } from "@/lib/accent-colors";
 import { rankingWeights } from "@/lib/data/site-content";
+
+/** One distinct accent hue per weighted-criteria stat. */
+const weightAccents: AccentColor[] = [
+  "blue",
+  "teal",
+  "green",
+  "violet",
+  "coral",
+];
 
 /**
  * "Rankings you can trust" strip — methodology line, a link to the
@@ -29,19 +40,28 @@ export function RankingWeightsBar() {
       </div>
 
       <dl className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
-        {rankingWeights.map((item) => (
-          <div
-            key={item.label}
-            className="rounded-lg border border-line-200 bg-white px-4 py-3 text-center"
-          >
-            <dt className="text-sm font-medium text-ink-700">
-              {item.label}
-            </dt>
-            <dd className="mt-1 font-display text-2xl font-extrabold text-brand-600 tabular-nums">
-              {item.weight}
-            </dd>
-          </div>
-        ))}
+        {rankingWeights.map((item, i) => {
+          const accent =
+            accentColors[weightAccents[i % weightAccents.length]];
+          return (
+            <div
+              key={item.label}
+              className="rounded-lg border border-line-200 bg-white px-4 py-3 text-center"
+            >
+              <dt className="text-sm font-medium text-ink-700">
+                {item.label}
+              </dt>
+              <dd
+                className={cn(
+                  "mt-1 font-display text-2xl font-extrabold tabular-nums",
+                  accent.fg,
+                )}
+              >
+                {item.weight}
+              </dd>
+            </div>
+          );
+        })}
       </dl>
     </div>
   );

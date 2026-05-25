@@ -2,6 +2,8 @@ import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
 import type { Brand, RankingEntry } from "@/types";
 import { BrandLogo } from "@/components/ui/BrandLogo";
+import { cn } from "@/lib/utils";
+import { accentColors, type AccentColor } from "@/lib/accent-colors";
 import { StarRating } from "./StarRating";
 import { ScoreLabelTag } from "./ScoreLabelTag";
 
@@ -16,6 +18,7 @@ export function RankedCard({
   categorySlug,
   rankLabel,
   highlighted = false,
+  accent = "blue",
 }: {
   entry: RankingEntry;
   brand: Brand;
@@ -24,19 +27,32 @@ export function RankedCard({
   rankLabel: string;
   /** The #1 card gets a brand-accent border. */
   highlighted?: boolean;
+  /** Accent hue for the rank badge + award label. */
+  accent?: AccentColor;
 }) {
+  const accentClasses = accentColors[accent];
   return (
     <article
       className={`relative flex flex-col rounded-xl border bg-white p-6 shadow-card transition-all hover:-translate-y-0.5 hover:shadow-card-hover ${
         highlighted ? "border-brand-600 ring-1 ring-brand-600" : "border-line-200"
       }`}
     >
-      {/* Rank + award */}
+      {/* Rank + award — color-coded per card */}
       <div className="flex items-center gap-2">
-        <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand-900 font-display text-sm font-bold text-white">
+        <span
+          className={cn(
+            "flex h-7 w-7 shrink-0 items-center justify-center rounded-full font-display text-sm font-bold text-white",
+            accentClasses.solid,
+          )}
+        >
           {entry.rank}
         </span>
-        <span className="text-xs font-semibold uppercase tracking-wide text-brand-600">
+        <span
+          className={cn(
+            "text-xs font-semibold uppercase tracking-wide",
+            accentClasses.fg,
+          )}
+        >
           {rankLabel}
         </span>
       </div>

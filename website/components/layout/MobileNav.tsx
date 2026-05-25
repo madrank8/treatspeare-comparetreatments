@@ -4,6 +4,8 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import * as Dialog from "@radix-ui/react-dialog";
 import { CategoryIcon } from "@/components/ui/Icon";
+import { cn } from "@/lib/utils";
+import { getCategoryAccent } from "@/lib/accent-colors";
 import { orderedCategories } from "@/lib/data/categories";
 import { SiteLogo } from "./SiteLogo";
 
@@ -42,21 +44,30 @@ export function MobileNav() {
               Treatments
             </p>
             <ul className="mb-6 space-y-1">
-              {orderedCategories.map((cat) => (
+              {orderedCategories.map((cat) => {
+                const accent = getCategoryAccent(cat.slug);
+                return (
                 <li key={cat.slug}>
                   <Dialog.Close asChild>
                     <Link
                       href={`/${cat.slug}`}
                       className="flex items-center gap-3 rounded-md p-2.5 text-sm font-semibold text-ink-700 hover:bg-brand-50"
                     >
-                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-brand-50 text-brand-600">
+                      <span
+                        className={cn(
+                          "flex h-8 w-8 shrink-0 items-center justify-center rounded-md",
+                          accent.tint,
+                          accent.fg,
+                        )}
+                      >
                         <CategoryIcon name={cat.icon} className="h-4 w-4" />
                       </span>
                       {cat.title}
                     </Link>
                   </Dialog.Close>
                 </li>
-              ))}
+                );
+              })}
             </ul>
 
             <div className="space-y-1 border-t border-line-200 pt-4">

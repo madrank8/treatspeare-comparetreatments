@@ -25,6 +25,22 @@
   --color-rating-50: #fef3e0;
   --color-rating-500: #f5a623;
 
+  /* ── Teal ── */
+  --color-teal-50: #e3f6f3;
+  --color-teal-100: #c1ebe5;
+  --color-teal-600: #0d9488;
+  --color-teal-700: #0b7d73;
+  /* ── Coral ── */
+  --color-coral-50: #fdeeea;
+  --color-coral-100: #f9d3c8;
+  --color-coral-600: #df573b;
+  --color-coral-700: #c0492f;
+  /* ── Violet ── */
+  --color-violet-50: #eeebfb;
+  --color-violet-100: #d6cef5;
+  --color-violet-600: #6a4fd0;
+  --color-violet-700: #5840b0;
+
   /* ── Ink (text) ─────────────────────────────────────────── */
   --color-ink-500: #64748b;
   --color-ink-700: #334155;

@@ -7,7 +7,10 @@ import {
 } from "lucide-react";
 import { ButtonLink } from "@/components/ui/Button";
 import { Container } from "@/components/layout/Container";
-import { formatDate } from "@/lib/utils";
+import { CategoryIcon } from "@/components/ui/Icon";
+import { cn, formatDate } from "@/lib/utils";
+import { getCategoryAccent } from "@/lib/accent-colors";
+import type { IconKey } from "@/types";
 import { TrustStatChip } from "./TrustStatChip";
 import { HeroPhoto } from "./HeroPhoto";
 import { HeroStatCard } from "./HeroStatCard";
@@ -117,11 +120,17 @@ export function HubHero({
   intro,
   lastReviewed,
   reviewedTreatments = "1,804",
+  categorySlug,
+  categoryIcon,
 }: {
   headline: string;
   intro: string;
   lastReviewed: string;
   reviewedTreatments?: string;
+  /** Category slug — drives the accent color of the hub icon medallion. */
+  categorySlug?: string;
+  /** Category icon key — renders a color-coded medallion above the H1. */
+  categoryIcon?: IconKey;
 }) {
   const trustItems = [
     { icon: Stethoscope, label: "Expert reviewed" },
@@ -132,11 +141,25 @@ export function HubHero({
     },
   ];
 
+  const accent = categorySlug ? getCategoryAccent(categorySlug) : null;
+
   return (
     <section className="border-b border-line-200 bg-white">
       <Container className="py-10 lg:py-14">
         <div className="grid items-center gap-8 lg:grid-cols-[1.6fr_1fr]">
           <div>
+            {accent && categoryIcon ? (
+              <span
+                className={cn(
+                  "mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl ring-1",
+                  accent.tint,
+                  accent.fg,
+                  accent.ring,
+                )}
+              >
+                <CategoryIcon name={categoryIcon} className="h-6 w-6" />
+              </span>
+            ) : null}
             <h1 className="text-3xl font-bold leading-tight text-brand-900 sm:text-4xl">
               {headline}
             </h1>

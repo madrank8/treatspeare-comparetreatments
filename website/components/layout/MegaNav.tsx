@@ -4,6 +4,8 @@ import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import { CategoryIcon } from "@/components/ui/Icon";
+import { cn } from "@/lib/utils";
+import { getCategoryAccent } from "@/lib/accent-colors";
 import { orderedCategories } from "@/lib/data/categories";
 
 /**
@@ -39,14 +41,22 @@ export function MegaNav() {
                 Browse by category
               </p>
               <ul className="grid grid-cols-2 gap-1">
-                {orderedCategories.map((cat) => (
+                {orderedCategories.map((cat) => {
+                  const accent = getCategoryAccent(cat.slug);
+                  return (
                   <li key={cat.slug}>
                     <NavigationMenu.Link asChild>
                       <Link
                         href={`/${cat.slug}`}
                         className="flex items-start gap-3 rounded-md p-2.5 transition-colors hover:bg-brand-50"
                       >
-                        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-brand-50 text-brand-600">
+                        <span
+                          className={cn(
+                            "flex h-9 w-9 shrink-0 items-center justify-center rounded-md",
+                            accent.tint,
+                            accent.fg,
+                          )}
+                        >
                           <CategoryIcon
                             name={cat.icon}
                             className="h-5 w-5"
@@ -63,7 +73,8 @@ export function MegaNav() {
                       </Link>
                     </NavigationMenu.Link>
                   </li>
-                ))}
+                  );
+                })}
               </ul>
             </div>
           </NavigationMenu.Content>

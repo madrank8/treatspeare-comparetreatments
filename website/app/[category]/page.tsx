@@ -107,6 +107,8 @@ export default async function CategoryHubPage({
         headline={category.heroHeadline}
         intro={category.heroIntro}
         lastReviewed={category.lastReviewed}
+        categorySlug={category.slug}
+        categoryIcon={category.icon}
       />
 
       {/* ── Two-column body ──────────────────────────────────── */}

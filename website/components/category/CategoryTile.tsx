@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { CategoryIcon } from "@/components/ui/Icon";
 import { cn } from "@/lib/utils";
+import { getCategoryAccent } from "@/lib/accent-colors";
 import type { HomeCategory } from "@/lib/data/site-content";
 
 /** One tile in the homepage "Explore treatments by category" grid. */
@@ -12,6 +13,10 @@ export function CategoryTile({
   category: HomeCategory;
   className?: string;
 }) {
+  // Derive the category slug from the hub href, then resolve its accent.
+  const slug = category.href.replace(/^\//, "");
+  const accent = getCategoryAccent(slug);
+
   return (
     <Link
       href={category.href}
@@ -26,8 +31,15 @@ export function CategoryTile({
         </span>
       ) : null}
 
-      {/* Prominent category icon */}
-      <span className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-brand-50 text-brand-600 transition-colors duration-200 group-hover:bg-brand-600 group-hover:text-white">
+      {/* Prominent category icon — color-coded per category */}
+      <span
+        className={cn(
+          "mb-5 flex h-16 w-16 items-center justify-center rounded-2xl transition-colors duration-200 group-hover:text-white",
+          accent.tint,
+          accent.fg,
+          accent.groupHoverSolid,
+        )}
+      >
         <CategoryIcon name={category.icon} className="h-8 w-8" />
       </span>
 
