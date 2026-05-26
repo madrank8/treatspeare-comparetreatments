@@ -154,7 +154,7 @@ export default function HomePage() {
       {/* ── 5 · Trust band ────────────────────────────────────── */}
       <Section tone="default">
         <TrustBar
-          heading="Why thousands trust CompareTreatments.com"
+          heading={`Why thousands trust ${SITE.name}`}
           stats={trustStats}
         />
       </Section>

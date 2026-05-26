@@ -1,10 +1,12 @@
 import { Info } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { SITE } from "@/lib/site";
 
 /**
  * Affiliate / advertising disclosure. FTC requires this to appear
- * clearly BEFORE any offer chart (architecture §6).
+ * clearly BEFORE any offer chart (architecture §6). Brand reference
+ * uses `SITE.shortName` so a future brand swap is a single-file change.
  */
 export function DisclosureBanner({ className }: { className?: string }) {
   return (
@@ -22,7 +24,7 @@ export function DisclosureBanner({ className }: { className?: string }) {
         <span className="font-semibold text-ink-900">
           Advertising disclosure:
         </span>{" "}
-        CompareTreatments is reader-supported. When you click through to a
+        {SITE.shortName} is reader-supported. When you click through to a
         provider listed below, we may earn a commission. This never
         influences our scores, rankings or editorial opinions — our
         methodology is applied identically to every provider.{" "}

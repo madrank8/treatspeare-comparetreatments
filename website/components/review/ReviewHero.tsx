@@ -4,11 +4,14 @@ import type { Brand, BrandReview } from "@/types";
 import { BrandLogo } from "@/components/ui/BrandLogo";
 import { RatingBadge } from "@/components/comparison/RatingBadge";
 import { AffiliateButton } from "@/components/affiliate/AffiliateButton";
+import { SITE } from "@/lib/site";
 
 /**
  * The brand review hero: brand logo, H1 title, large rating cluster,
  * one-line verdict, a primary affiliate CTA and an inline FTC-compliant
- * affiliate disclosure near the CTA (architecture §4.4).
+ * affiliate disclosure near the CTA (architecture §4.4). Brand
+ * reference uses `SITE.shortName` so a future brand swap is a
+ * single-file change.
  */
 export function ReviewHero({
   brand,
@@ -56,7 +59,7 @@ export function ReviewHero({
           <span className="font-semibold text-ink-700">
             Advertising disclosure:
           </span>{" "}
-          CompareTreatments is reader-supported. If you sign up with{" "}
+          {SITE.shortName} is reader-supported. If you sign up with{" "}
           {brand.name} through a link on this page, we may earn a commission.
           This never affects our scores or rankings.{" "}
           <Link

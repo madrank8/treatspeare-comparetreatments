@@ -1,10 +1,11 @@
 /**
- * Shared domain types for CompareTreatments.com.
+ * Shared domain types for the comparison site.
  *
  * Based on the architecture doc's data model (§2) but with ALL
  * Sanity-specific concerns removed: no `_id`, `_type`, `Reference<>`,
  * `PortableText`, or `SanityImage`. Plain TS only — sample data lives
- * in `lib/data/*.ts`.
+ * in `lib/data/*.ts`. When the Sanity migration lands (audit P1-7),
+ * these types become the migration contract.
  */
 
 export type ScoreLabel = "Excellent" | "Great" | "Good" | "Fair" | "Poor";

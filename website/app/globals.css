@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 /* ============================================================
-   CompareTreatments.com — Design System
-   Tailwind v4 @theme tokens. Extracted from architecture §5:
+   Design System — Tailwind v4 @theme tokens.
+   Extracted from strategy/site-architecture-and-build-plan.md §5:
    clean clinical-trust — white canvas, deep navy, ONE bright
    green for affiliate CTAs, amber for rating stars.
    ============================================================ */

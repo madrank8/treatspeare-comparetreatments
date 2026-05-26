@@ -6,6 +6,9 @@ import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { ConsentModeBootstrap } from "@/components/consent/ConsentModeBootstrap";
+import { CookiebotScript } from "@/components/consent/CookiebotScript";
+import { GoogleTagManager } from "@/components/analytics/GoogleTagManager";
 import {
   buildOrganizationSchema,
   buildWebSiteSchema,
@@ -63,6 +66,12 @@ export default function RootLayout({
       className={`${inter.variable} ${sora.variable} h-full`}
     >
       <body className="flex min-h-full flex-col">
+        {/* Consent Mode v2 default-denied — must run before any tag loads. */}
+        <ConsentModeBootstrap />
+        {/* Cookiebot CMP — auto-blocks all tagged third-party scripts. */}
+        <CookiebotScript />
+        {/* GTM — gated behind statistics + marketing consent. */}
+        <GoogleTagManager />
         <JsonLd data={buildOrganizationSchema()} />
         <JsonLd data={buildWebSiteSchema()} />
         <AnnouncementBar />

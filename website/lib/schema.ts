@@ -28,7 +28,14 @@ export function buildOrganizationSchema(): JsonLdObject {
   };
 }
 
-/** WebSite (with SearchAction) — emitted in the root layout. */
+/**
+ * WebSite — emitted in the root layout.
+ *
+ * Note: a `SearchAction` potentialAction was removed because no
+ * `/search` route exists yet. Rich Results validates the URL template,
+ * so an unimplemented endpoint there is flagged as broken schema.
+ * Re-add this block when `/search` is built (see audit P2-4).
+ */
 export function buildWebSiteSchema(): JsonLdObject {
   return {
     "@context": "https://schema.org",
@@ -37,14 +44,6 @@ export function buildWebSiteSchema(): JsonLdObject {
     name: SITE.name,
     url: SITE.url,
     publisher: { "@id": `${SITE.url}/#organization` },
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${SITE.url}/search?q={search_term_string}`,
-      },
-      "query-input": "required name=search_term_string",
-    },
   };
 }
 
@@ -84,6 +83,48 @@ export function buildItemListSchema(
         url: `${SITE.url}/${category.slug}#${entry.brandSlug}`,
       };
     }),
+  };
+}
+
+/**
+ * CollectionPage wrapping ItemList — used on category hubs.
+ *
+ * The plan's hub schema is a `CollectionPage` whose `mainEntity` is
+ * the ranked offer chart (`ItemList`). The standalone
+ * `buildItemListSchema` above is kept for any other consumer; new
+ * code should prefer this wrapper, which adds the page-level envelope
+ * (`@id`, `isPartOf`, `publisher`) so the hub is correctly modeled as
+ * a category-listing page. See AUDIT-2026-05-26.md § 2b.
+ */
+export function buildCollectionPageSchema(
+  table: RankingTable,
+  category: TreatmentCategory,
+): JsonLdObject {
+  const url = `${SITE.url}/${category.slug}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": `${url}#collectionpage`,
+    name: category.heroHeadline,
+    description: category.metaDescription,
+    url,
+    isPartOf: { "@id": `${SITE.url}/#website` },
+    publisher: { "@id": `${SITE.url}/#organization` },
+    mainEntity: {
+      "@type": "ItemList",
+      name: category.heroHeadline,
+      numberOfItems: table.entries.length,
+      itemListOrder: "https://schema.org/ItemListOrderDescending",
+      itemListElement: table.entries.map((entry) => {
+        const brand = getBrand(entry.brandSlug);
+        return {
+          "@type": "ListItem",
+          position: entry.rank,
+          name: brand?.name ?? entry.brandSlug,
+          url: `${SITE.url}/${category.slug}#${entry.brandSlug}`,
+        };
+      }),
+    },
   };
 }
 

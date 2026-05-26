@@ -9,8 +9,7 @@ import { authors } from "@/lib/data/authors";
 
 const PATH = "/authors";
 const TITLE = "Our Editorial & Medical Review Team";
-const DESCRIPTION =
-  "Meet the writers, editors and board-certified medical reviewers behind CompareTreatments — the people who research, write and clinically review every treatment comparison.";
+const DESCRIPTION = `Meet the writers, editors and board-certified medical reviewers behind ${SITE.shortName} — the people who research, write and clinically review every treatment comparison.`;
 
 export const metadata: Metadata = {
   title: TITLE,

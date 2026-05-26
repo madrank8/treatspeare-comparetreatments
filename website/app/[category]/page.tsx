@@ -15,8 +15,8 @@ import { DrugFactsBox } from "@/components/sidebar/DrugFactsBox";
 import { MedicalReviewerByline } from "@/components/eeat/MedicalReviewerByline";
 import { JsonLd } from "@/components/seo/JsonLd";
 import {
+  buildCollectionPageSchema,
   buildFaqSchema,
-  buildItemListSchema,
   buildMedicalWebPageSchema,
 } from "@/lib/schema";
 import {
@@ -187,7 +187,7 @@ export default async function CategoryHubPage({
       </div>
 
       {/* ── Structured data ──────────────────────────────────── */}
-      <JsonLd data={buildItemListSchema(table, category)} />
+      <JsonLd data={buildCollectionPageSchema(table, category)} />
       {faqs.length > 0 ? (
         <JsonLd data={buildFaqSchema(faqs)} />
       ) : null}

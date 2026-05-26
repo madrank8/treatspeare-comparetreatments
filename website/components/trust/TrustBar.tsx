@@ -1,7 +1,10 @@
 import { cn } from "@/lib/utils";
 import type { TrustStat } from "@/types";
 
-/** Dark stats band — "Why thousands trust CompareTreatments". */
+/**
+ * Dark stats band rendering up to five trust statistics. Heading is
+ * supplied by the consumer (typically interpolated with `SITE.name`).
+ */
 export function TrustBar({
   heading,
   stats,

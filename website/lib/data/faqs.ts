@@ -1,19 +1,19 @@
 import type { FAQ } from "@/types";
+import { SITE } from "@/lib/site";
 
 /** Sample FAQ content. Educational only — not medical advice. */
 export const faqs: FAQ[] = [
   // ── Homepage FAQs ──────────────────────────────────────────
   {
     slug: "how-do-you-make-money",
-    question: "How does CompareTreatments make money?",
+    question: `How does ${SITE.shortName} make money?`,
     answer:
       "We earn affiliate commissions when readers click through to a telehealth provider and sign up. Commissions never influence our scores or rankings — our methodology is applied identically to partners and non-partners, and we disclose every paid relationship.",
   },
   {
     slug: "is-this-medical-advice",
     question: "Is the information on this site medical advice?",
-    answer:
-      "No. CompareTreatments publishes independent research and comparison content to help you have an informed conversation with a licensed clinician. It is not a substitute for personalized medical advice, diagnosis or treatment.",
+    answer: `No. ${SITE.shortName} publishes independent research and comparison content to help you have an informed conversation with a licensed clinician. It is not a substitute for personalized medical advice, diagnosis or treatment.`,
   },
   {
     slug: "how-are-treatments-scored",

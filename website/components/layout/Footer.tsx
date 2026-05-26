@@ -94,7 +94,7 @@ export function Footer() {
 
         <div className="mt-12 border-t border-white/10 pt-8">
           <p className="text-xs leading-relaxed text-brand-100/70">
-            {SITE.disclosure} CompareTreatments does not provide medical
+            {SITE.disclosure} {SITE.shortName} does not provide medical
             advice, diagnosis or treatment. Always seek the advice of a
             licensed clinician with any questions about a medical condition.
           </p>

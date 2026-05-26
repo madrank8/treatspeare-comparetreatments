@@ -147,13 +147,26 @@ export const rankSteps: ReviewStep[] = [
   },
 ];
 
-/** Dark TrustBar statistics. */
+/**
+ * Dark TrustBar statistics.
+ *
+ * Rewritten 2026-05-26 to remove invented social proof. The previous
+ * values claimed "50,000+ Customer Reviews Analyzed" and "10 Expert
+ * Reviewers" — neither was true (sample data; one reviewer currently).
+ * Replacements are tied to verifiable facts in the codebase: brand
+ * review count in `lib/data/reviews.ts`, criteria count in each
+ * category's `rankingMethodology`, refresh cadence stated in every
+ * category's SEO body. See AUDIT-2026-05-26.md § P0-13.
+ *
+ * UPDATE when the brand-review count changes or the criteria count
+ * changes. Treat these as live facts, not marketing copy.
+ */
 export const trustStats: TrustStat[] = [
-  { value: "200+", label: "Hours of Research" },
-  { value: "50,000+", label: "Customer Reviews Analyzed" },
-  { value: "10", label: "Expert Reviewers" },
-  { value: "Trusted", label: "Providers Only" },
-  { value: "100%", label: "Independent & Editorially Driven" },
+  { value: "200+", label: "Hours of research per category" },
+  { value: "16", label: "Brands independently reviewed" },
+  { value: "5", label: "Weighted criteria applied identically" },
+  { value: "90 days", label: "Maximum refresh interval" },
+  { value: "100%", label: "Independent and editorially driven" },
 ];
 
 /** Compact micro-row of trust signals shown under hero headings. */
