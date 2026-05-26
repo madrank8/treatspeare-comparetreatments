@@ -1,9 +1,9 @@
 
-**Effective date: [EFFECTIVE DATE]**
+**Effective date: May 26, 2026**
 
 ## 1. Why We Publish This Page
 
-Treatibly (treatibly.com) reviews, compares, and ranks third-party telehealth brands. Because we earn compensation from some of the brands we cover, we believe you are entitled to know exactly how our reviews and rankings are produced — and to be confident that compensation does not buy a better score.
+ComparedRx (comparedrx.com) reviews, compares, and ranks third-party telehealth brands. Because we earn compensation from some of the brands we cover, we believe you are entitled to know exactly how our reviews and rankings are produced — and to be confident that compensation does not buy a better score.
 
 This page explains our scoring framework, how we research brands, how we keep editorial scoring separate from commercial relationships, and how we correct mistakes. It is meant to be a genuine description of how we work, not a formality.
 
@@ -56,7 +56,7 @@ We do not publish fake reviews, we do not buy or incentivize reviews in exchange
 
 ## 6. Editorial Independence and How Compensation Is Handled
 
-Treatibly earns compensation from some brands through affiliate commissions, paid placement, pay-per-click, and pay-per-call or pay-per-lead arrangements. We are transparent about this in our **Affiliate and Advertising Disclosure**. Here is how we keep that compensation from corrupting our reviews:
+ComparedRx earns compensation from some brands through affiliate commissions, paid placement, pay-per-click, and pay-per-call or pay-per-lead arrangements. We are transparent about this in our **Affiliate and Advertising Disclosure**. Here is how we keep that compensation from corrupting our reviews:
 
 - **Compensation does not affect editorial scores.** A brand's score is determined solely by the weighted criteria in Section 3. Paying us — or paying us more — does not raise a score, and declining to pay us does not lower one.
 - **Paid placement is always labeled.** If a brand pays for placement in a particular position or unit, that placement is clearly labeled as "Sponsored" or "Advertisement." A labeled paid placement does not change the brand's editorial score or written assessment.

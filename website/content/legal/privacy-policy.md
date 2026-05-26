@@ -1,17 +1,17 @@
 
-**Effective date: [EFFECTIVE DATE]**
+**Effective date: May 26, 2026**
 
 ## 1. Introduction and Scope
 
-This Privacy Policy explains how [COMPANY LEGAL NAME] ("Treatibly," "we," "us," or "our") collects, uses, discloses, and protects information about you when you visit treatibly.com and any related pages, content, or services that link to this Policy (collectively, the "Site").
+This Privacy Policy explains how [COMPANY LEGAL NAME] ("ComparedRx," "we," "us," or "our") collects, uses, discloses, and protects information about you when you visit comparedrx.com and any related pages, content, or services that link to this Policy (collectively, the "Site").
 
-Treatibly operates an editorial website that publishes reviews, comparisons, and rankings of third-party telehealth brands. We are an independent publisher. We are **not** a healthcare provider, a pharmacy, or a telehealth platform, and we do not deliver medical care. Please also read our Terms of Service, our Affiliate and Advertising Disclosure, and our Medical Disclaimer, which govern your use of the Site together with this Policy.
+ComparedRx operates an editorial website that publishes reviews, comparisons, and rankings of third-party telehealth brands. We are an independent publisher. We are **not** a healthcare provider, a pharmacy, or a telehealth platform, and we do not deliver medical care. Please also read our Terms of Service, our Affiliate and Advertising Disclosure, and our Medical Disclaimer, which govern your use of the Site together with this Policy.
 
 By using the Site, you acknowledge that you have read and understood this Privacy Policy. If you do not agree with it, please do not use the Site.
 
 ## 2. We Are Not a HIPAA Covered Entity
 
-Treatibly is **not** a "covered entity" or a "business associate" under the U.S. Health Insurance Portability and Accountability Act (HIPAA), and the information we collect through the Site is generally **not** protected health information (PHI) subject to HIPAA.
+ComparedRx is **not** a "covered entity" or a "business associate" under the U.S. Health Insurance Portability and Accountability Act (HIPAA), and the information we collect through the Site is generally **not** protected health information (PHI) subject to HIPAA.
 
 Please **do not send us protected health information, medical records, diagnoses, or detailed descriptions of your personal health conditions**. The Site is informational only and we cannot answer personal medical questions. If you choose to share health-related details with us anyway, you do so at your own risk, and that information will be handled under this Policy rather than under HIPAA.
 
@@ -67,9 +67,9 @@ Some of this activity may be considered a "sale" or "sharing" of personal inform
 
 ## 7. Affiliate Click Tracking
 
-Treatibly earns compensation when users click through to, or take action with, third-party telehealth brands. To support this, when you click an outbound link to a partner, we and our affiliate-network and measurement partners may record the click, the originating page, a timestamp, and an attribution identifier (often stored in a cookie or appended to a URL).
+ComparedRx earns compensation when users click through to, or take action with, third-party telehealth brands. To support this, when you click an outbound link to a partner, we and our affiliate-network and measurement partners may record the click, the originating page, a timestamp, and an attribution identifier (often stored in a cookie or appended to a URL).
 
-This allows a partner to recognize that you came from Treatibly and to compensate us accordingly. We do not receive your medical information, prescription details, or the contents of any account you create with a telehealth provider. Once you leave the Site, the third party's own privacy policy governs the information it collects.
+This allows a partner to recognize that you came from ComparedRx and to compensate us accordingly. We do not receive your medical information, prescription details, or the contents of any account you create with a telehealth provider. Once you leave the Site, the third party's own privacy policy governs the information it collects.
 
 ## 8. How We Share Information
 
@@ -77,7 +77,7 @@ We do not sell your personal information for money. We may, however, "sell" or "
 
 - **Service providers.** We share information with vendors that perform services on our behalf — such as website hosting, analytics, email delivery, customer support, and security — under contracts that limit their use of the information.
 - **Advertising and affiliate partners.** We share online identifiers and usage information with analytics, advertising, and affiliate-network partners as described in Sections 6 and 7.
-- **Legal and safety.** We may disclose information to comply with law, respond to lawful requests and legal process, enforce our Terms of Service, or protect the rights, property, or safety of Treatibly, our users, or the public.
+- **Legal and safety.** We may disclose information to comply with law, respond to lawful requests and legal process, enforce our Terms of Service, or protect the rights, property, or safety of ComparedRx, our users, or the public.
 - **Business transfers.** If we are involved in a merger, acquisition, financing, or sale of assets, information may be transferred as part of that transaction, subject to this Policy.
 
 We may also share aggregated or de-identified information that cannot reasonably be used to identify you.

@@ -1,9 +1,9 @@
 
-**Effective date: [EFFECTIVE DATE]**
+**Effective date: May 26, 2026**
 
 ## 1. About This Policy
 
-This Cookie Policy explains how [COMPANY LEGAL NAME] ("Treatibly," "we," "us," or "our") uses cookies and similar tracking technologies on treatibly.com (the "Site"). It should be read together with our **Privacy Policy**, which describes how we handle personal information more generally.
+This Cookie Policy explains how [COMPANY LEGAL NAME] ("ComparedRx," "we," "us," or "our") uses cookies and similar tracking technologies on comparedrx.com (the "Site"). It should be read together with our **Privacy Policy**, which describes how we handle personal information more generally.
 
 By using the Site, and where required by law by accepting non-essential cookies through our consent banner, you agree to the use of cookies as described in this Policy.
 

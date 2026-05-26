@@ -1,9 +1,9 @@
 
-**Effective date: [EFFECTIVE DATE]**
+**Effective date: May 26, 2026**
 
 ## 1. Acceptance of These Terms
 
-These Terms of Service ("Terms") are a binding agreement between you and [COMPANY LEGAL NAME] ("Treatibly," "we," "us," or "our") governing your access to and use of treatibly.com and all related content and services (collectively, the "Site").
+These Terms of Service ("Terms") are a binding agreement between you and [COMPANY LEGAL NAME] ("ComparedRx," "we," "us," or "our") governing your access to and use of comparedrx.com and all related content and services (collectively, the "Site").
 
 By accessing or using the Site, you agree to be bound by these Terms, our Privacy Policy, our Affiliate and Advertising Disclosure, and our Medical Disclaimer, each of which is incorporated by reference. **If you do not agree to these Terms, do not use the Site.**
 
@@ -13,9 +13,9 @@ You must be at least **18 years old** and able to form a legally binding contrac
 
 ## 3. Description of the Service
 
-Treatibly is an **independent editorial publisher**. The Site provides informational articles, reviews, comparisons, and rankings of third-party telehealth brands across categories such as weight management and GLP-1 medications, men's health, women's health, erectile dysfunction, testosterone and hormone therapy, hair loss, skin care, sexual health, and at-home blood testing.
+ComparedRx is an **independent editorial publisher**. The Site provides informational articles, reviews, comparisons, and rankings of third-party telehealth brands across categories such as weight management and GLP-1 medications, men's health, women's health, erectile dysfunction, testosterone and hormone therapy, hair loss, skin care, sexual health, and at-home blood testing.
 
-**Treatibly is not, and does not act as:**
+**ComparedRx is not, and does not act as:**
 
 - a healthcare provider, medical practice, or clinician;
 - a pharmacy, drug manufacturer, or compounding facility;
@@ -26,7 +26,7 @@ We do **not** provide medical advice, diagnosis, or treatment; we do not prescri
 
 ## 4. Affiliate and Advertising Compensation
 
-The Site is supported by commercial relationships. **Treatibly earns compensation** — which may include affiliate commissions, paid placements, pay-per-click fees, and pay-per-call or pay-per-lead fees — when users click through to, contact, or take action with the third-party telehealth brands featured on the Site.
+The Site is supported by commercial relationships. **ComparedRx earns compensation** — which may include affiliate commissions, paid placements, pay-per-click fees, and pay-per-call or pay-per-lead fees — when users click through to, contact, or take action with the third-party telehealth brands featured on the Site.
 
 This compensation may influence which brands are featured and how they are presented or ordered. Not all featured brands compensate us. Our editorial scores and opinions are our own and are determined under our published **Editorial and Review Methodology**, which separates editorial scoring from commercial relationships and requires that any paid placement be clearly labeled. For full details, see our **Affiliate and Advertising Disclosure**. By using the Site, you acknowledge and accept these commercial relationships.
 
@@ -34,15 +34,15 @@ This compensation may influence which brands are featured and how they are prese
 
 The Site contains links and references to third-party websites, products, and services that we do not own or control. We provide these links for convenience and information only. We do not endorse, guarantee, or assume responsibility for any third party, including any telehealth brand, its providers, its products, its pricing, its medications (including any compounded medications), or its practices.
 
-Any transaction you enter into with a third party — including consultations, prescriptions, and purchases — is solely between you and that third party and is governed by that third party's own terms and policies. **You should independently verify all information, including pricing, offers, availability, clinical services, and product details, directly with the third party before relying on it.** Treatibly is not liable for any loss or harm arising from your dealings with any third party.
+Any transaction you enter into with a third party — including consultations, prescriptions, and purchases — is solely between you and that third party and is governed by that third party's own terms and policies. **You should independently verify all information, including pricing, offers, availability, clinical services, and product details, directly with the third party before relying on it.** ComparedRx is not liable for any loss or harm arising from your dealings with any third party.
 
 ## 6. No Doctor–Patient Relationship
 
-Nothing on the Site is a substitute for professional medical advice, diagnosis, or treatment. Reading the Site, contacting us, or clicking a link to a telehealth brand does not create a doctor–patient or clinician–patient relationship with Treatibly. Always seek the advice of a licensed healthcare provider with any questions you have about a medical condition or treatment. See our **Medical Disclaimer**.
+Nothing on the Site is a substitute for professional medical advice, diagnosis, or treatment. Reading the Site, contacting us, or clicking a link to a telehealth brand does not create a doctor–patient or clinician–patient relationship with ComparedRx. Always seek the advice of a licensed healthcare provider with any questions you have about a medical condition or treatment. See our **Medical Disclaimer**.
 
 ## 7. Intellectual Property
 
-The Site and its content — including text, reviews, rankings, scoring methodologies, graphics, logos, design, and the Treatibly name — are owned by [COMPANY LEGAL NAME] or its licensors and are protected by copyright, trademark, and other laws. Subject to these Terms, we grant you a limited, personal, non-exclusive, non-transferable, revocable license to access and use the Site for your own personal, non-commercial use.
+The Site and its content — including text, reviews, rankings, scoring methodologies, graphics, logos, design, and the ComparedRx name — are owned by [COMPANY LEGAL NAME] or its licensors and are protected by copyright, trademark, and other laws. Subject to these Terms, we grant you a limited, personal, non-exclusive, non-transferable, revocable license to access and use the Site for your own personal, non-commercial use.
 
 You may not copy, reproduce, republish, scrape, frame, distribute, sell, or create derivative works from the Site or its content without our prior written permission, except that you may share links to individual pages and quote brief excerpts with attribution.
 

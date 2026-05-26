@@ -1,11 +1,11 @@
 
-**Effective date: [EFFECTIVE DATE]**
+**Effective date: May 26, 2026**
 
-We would love to hear from you. Treatibly (treatibly.com), operated by [COMPANY LEGAL NAME], welcomes questions, feedback, corrections, and partnership inquiries. To help us respond quickly, please use the contact route that best fits your message.
+We would love to hear from you. ComparedRx (comparedrx.com), operated by [COMPANY LEGAL NAME], welcomes questions, feedback, corrections, and partnership inquiries. To help us respond quickly, please use the contact route that best fits your message.
 
 ## A Note Before You Write
 
-Treatibly is an independent publisher, not a healthcare provider. **We cannot answer personal medical questions** and cannot give medical advice, diagnose conditions, or recommend a specific treatment for you. For any question about your health, please consult a licensed healthcare provider. If you are experiencing a medical emergency, call 911 or go to the nearest emergency room. Please also do not send us protected health information or detailed personal medical history.
+ComparedRx is an independent publisher, not a healthcare provider. **We cannot answer personal medical questions** and cannot give medical advice, diagnose conditions, or recommend a specific treatment for you. For any question about your health, please consult a licensed healthcare provider. If you are experiencing a medical emergency, call 911 or go to the nearest emergency room. Please also do not send us protected health information or detailed personal medical history.
 
 ## General Inquiries
 
