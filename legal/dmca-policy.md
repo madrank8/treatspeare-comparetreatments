@@ -7,17 +7,17 @@
   registering the agent and keeping the registration current is a separate step.
 
   Placeholders used in this file:
-  [COMPANY LEGAL NAME], Treatibly, treatibly.com, [BUSINESS MAILING ADDRESS],
-  [LEGAL/DMCA EMAIL], [PHONE NUMBER], [EFFECTIVE DATE]
+  [COMPANY LEGAL NAME], ComparedRx, comparedrx.com, [BUSINESS MAILING ADDRESS],
+  [LEGAL/DMCA EMAIL], [PHONE NUMBER]
 -->
 
 # DMCA / Copyright Policy
 
-**Effective date: [EFFECTIVE DATE]**
+**Effective date: May 26, 2026**
 
 ## 1. Our Respect for Copyright
 
-[COMPANY LEGAL NAME], which operates Treatibly (treatibly.com), respects the intellectual property rights of others and expects users of the Site to do the same. This policy explains how to notify us of claimed copyright infringement on the Site and how we respond, consistent with the Digital Millennium Copyright Act ("DMCA"), 17 U.S.C. § 512.
+[COMPANY LEGAL NAME], which operates ComparedRx (comparedrx.com), respects the intellectual property rights of others and expects users of the Site to do the same. This policy explains how to notify us of claimed copyright infringement on the Site and how we respond, consistent with the Digital Millennium Copyright Act ("DMCA"), 17 U.S.C. § 512.
 
 ## 2. How to File a Copyright Infringement Notice
 

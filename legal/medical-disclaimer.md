@@ -7,25 +7,24 @@
   the site clear of FDA enforcement risk.
 
   Placeholders used in this file:
-  [COMPANY LEGAL NAME], Treatibly, treatibly.com, [GENERAL CONTACT EMAIL],
-  [EFFECTIVE DATE]
+  [COMPANY LEGAL NAME], ComparedRx, comparedrx.com, [GENERAL CONTACT EMAIL]
 -->
 
 # Medical Disclaimer
 
-**Effective date: [EFFECTIVE DATE]**
+**Effective date: May 26, 2026**
 
 ## 1. Informational Purposes Only
 
-Treatibly (treatibly.com) publishes reviews, comparisons, and articles about third-party telehealth brands and treatment categories. **All content on the Site is provided for general informational and educational purposes only.** It is not, and should not be relied upon as, medical advice.
+ComparedRx (comparedrx.com) publishes reviews, comparisons, and articles about third-party telehealth brands and treatment categories. **All content on the Site is provided for general informational and educational purposes only.** It is not, and should not be relied upon as, medical advice.
 
-[COMPANY LEGAL NAME], which operates Treatibly, is an independent publisher. We are **not** a healthcare provider, medical practice, pharmacy, drug manufacturer, compounding facility, or telehealth platform.
+[COMPANY LEGAL NAME], which operates ComparedRx, is an independent publisher. We are **not** a healthcare provider, medical practice, pharmacy, drug manufacturer, compounding facility, or telehealth platform.
 
 ## 2. Not Medical Advice; No Doctor–Patient Relationship
 
 Nothing on the Site constitutes medical advice, diagnosis, or treatment. The content is not a substitute for the professional judgment of a licensed healthcare provider who knows your individual medical history.
 
-Reading the Site, contacting us, signing up for our newsletter, or clicking a link to a telehealth brand **does not create a doctor–patient, clinician–patient, or any other professional healthcare relationship** with Treatibly. We do not practice medicine, and we cannot and do not answer personal medical questions.
+Reading the Site, contacting us, signing up for our newsletter, or clicking a link to a telehealth brand **does not create a doctor–patient, clinician–patient, or any other professional healthcare relationship** with ComparedRx. We do not practice medicine, and we cannot and do not answer personal medical questions.
 
 ## 3. Always Consult a Licensed Healthcare Provider
 
@@ -39,14 +38,14 @@ Before starting, stopping, or changing any treatment, medication, supplement, di
 
 ## 5. We Do Not Prescribe, Dispense, or Sell Medications
 
-Treatibly does not prescribe, recommend a specific prescription for any individual, dispense, compound, or sell any medication, drug, device, or treatment. We do not facilitate medical consultations. Any consultation, prescription, medication, or product you obtain comes solely from a third-party telehealth brand and its licensed providers and pharmacies, under that third party's own terms — not from Treatibly.
+ComparedRx does not prescribe, recommend a specific prescription for any individual, dispense, compound, or sell any medication, drug, device, or treatment. We do not facilitate medical consultations. Any consultation, prescription, medication, or product you obtain comes solely from a third-party telehealth brand and its licensed providers and pharmacies, under that third party's own terms — not from ComparedRx.
 
 ## 6. GLP-1 Medications and Compounded Drugs — Important Notice
 
 Some of the telehealth brands featured on the Site offer **compounded medications**, including compounded versions of GLP-1 and GLP-1/GIP medications such as semaglutide and tirzepatide. Please understand the following:
 
 - **Compounded drugs are not FDA-approved.** Compounded medications are not reviewed or approved by the U.S. Food and Drug Administration (FDA) for safety, effectiveness, or quality. The FDA does not verify that a compounded drug works as intended or that it is manufactured to the standards required for FDA-approved products.
-- **Compounded drugs are not equivalent to FDA-approved brand-name drugs.** Treatibly does **not** claim, and you should not assume, that any compounded medication is the "same as," interchangeable with, or therapeutically equivalent to an FDA-approved branded product. Compounded products can differ in formulation, dosing, ingredients, and quality.
+- **Compounded drugs are not equivalent to FDA-approved brand-name drugs.** ComparedRx does **not** claim, and you should not assume, that any compounded medication is the "same as," interchangeable with, or therapeutically equivalent to an FDA-approved branded product. Compounded products can differ in formulation, dosing, ingredients, and quality.
 - **Brand names are trademarks used for identification only.** Names such as Ozempic®, Wegovy®, Zepbound®, Mounjaro®, and similar marks are registered trademarks of their respective manufacturers. They are used on the Site solely to identify and describe FDA-approved products for comparison and editorial purposes. Their use does not imply any affiliation with, sponsorship by, or endorsement by those manufacturers, and it does not imply that any compounded product is the same as those branded products.
 - **Only a licensed clinician can assess suitability.** Whether any medication — compounded or FDA-approved — is appropriate for you depends on your individual health, medical history, and risk factors. That determination must be made by a licensed healthcare provider, not by the Site.
 

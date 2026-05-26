@@ -1,9 +1,9 @@
 
-**Effective date: [EFFECTIVE DATE]**
+**Effective date: May 26, 2026**
 
 ## Our Commitment
 
-[COMPANY LEGAL NAME], which operates Treatibly (treatibly.com), is committed to making the Site accessible to the widest possible audience, including people with disabilities. We believe everyone should be able to research and compare telehealth options with ease, and we work to provide a website that is usable and welcoming for all visitors.
+[COMPANY LEGAL NAME], which operates ComparedRx (comparedrx.com), is committed to making the Site accessible to the widest possible audience, including people with disabilities. We believe everyone should be able to research and compare telehealth options with ease, and we work to provide a website that is usable and welcoming for all visitors.
 
 ## Conformance Goal
 

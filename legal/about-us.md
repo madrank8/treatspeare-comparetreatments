@@ -7,17 +7,17 @@
   to defensible health content.
 
   Placeholders used in this file:
-  [COMPANY LEGAL NAME], Treatibly, treatibly.com, [BUSINESS MAILING ADDRESS],
-  [STATE OF FORMATION], [GENERAL CONTACT EMAIL], [EFFECTIVE DATE]
+  [COMPANY LEGAL NAME], ComparedRx, comparedrx.com, [BUSINESS MAILING ADDRESS],
+  [STATE OF FORMATION], [GENERAL CONTACT EMAIL]
 -->
 
 # About Us
 
-**Effective date: [EFFECTIVE DATE]**
+**Effective date: May 26, 2026**
 
 ## Who We Are
 
-Treatibly (treatibly.com) is an independent online publisher that reviews, compares, and ranks telehealth brands across the United States. The Site is owned and operated by [COMPANY LEGAL NAME], a company organized under the laws of the State of [STATE OF FORMATION].
+ComparedRx (comparedrx.com) is an independent online publisher that reviews, compares, and ranks telehealth brands across the United States. The Site is owned and operated by [COMPANY LEGAL NAME], a company organized under the laws of the State of [STATE OF FORMATION].
 
 We cover the telehealth categories that matter most to everyday consumers — including weight management and GLP-1 medications, men's health, women's health, erectile dysfunction, testosterone and hormone therapy, hair loss, skin care, sexual health, and at-home blood testing.
 
@@ -33,7 +33,7 @@ The telehealth market has grown quickly, and it can be hard for consumers to tel
 
 ## What We Do Not Do
 
-We want to be clear about our limits. Treatibly is **not** a healthcare provider, a medical practice, a pharmacy, or a telehealth platform. We do **not**:
+We want to be clear about our limits. ComparedRx is **not** a healthcare provider, a medical practice, a pharmacy, or a telehealth platform. We do **not**:
 
 - provide medical advice, diagnosis, or treatment;
 - prescribe, dispense, compound, or sell any medication or treatment;
@@ -44,7 +44,7 @@ Our content is informational and educational only. Decisions about your health s
 
 ## How We Make Money
 
-Treatibly is free to use. We are funded through advertising and affiliate relationships: when readers click through to a telehealth brand from our Site and take certain actions, we may earn a commission or fee. This can include affiliate commissions, paid placement, and pay-per-click or pay-per-call compensation.
+ComparedRx is free to use. We are funded through advertising and affiliate relationships: when readers click through to a telehealth brand from our Site and take certain actions, we may earn a commission or fee. This can include affiliate commissions, paid placement, and pay-per-click or pay-per-call compensation.
 
 We disclose this clearly and in detail in our **Affiliate and Advertising Disclosure**, and a short disclosure also appears on every review and comparison page near the links it describes. We believe you should always know how a publisher is funded.
 
