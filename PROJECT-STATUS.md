@@ -1,6 +1,6 @@
 # comparetreatments — Project Status
 
-> Working tracker for the build. **Last updated: 2026-05-26.**
+> Working tracker for the build. **Last updated: 2026-05-28.**
 > Update this file as work progresses so each session can pick up cleanly.
 
 ---
@@ -9,7 +9,7 @@
 
 A US telehealth **treatment-comparison affiliate site** — modeled on the competitor `comparetreatments.com` and built to beat it on structure, E-E-A-T, performance, and compliance. Revenue model: affiliate commissions + paid placement + pay-per-click / pay-per-call.
 
-**The codebase ships under the working placeholder brand "ComparedRx" until the real brand and domain are locked.** The swap is a one-file change in `website/lib/site.ts` plus a 4-string find-and-replace across `legal/` + `website/content/legal/`.
+**Brand: Treatsphere · Production domain: https://treatsphere.com** — locked and live on Vercel (2026-05-28). The single-file pattern in `website/lib/site.ts` + a 4-string find-and-replace across `legal/` + `website/content/legal/` remains the way to rebrand if it ever changes again.
 
 ## Quick facts
 
@@ -20,8 +20,8 @@ A US telehealth **treatment-comparison affiliate site** — modeled on the compe
 | App | `website/` — **Next.js 16.2.6**, React 19.1, TypeScript strict, Tailwind v4.1 |
 | Run locally | `cd website && npm install && npm run dev` → localhost:3000 |
 | Live deploy | https://comparetreatments-eight.vercel.app — Vercel, auto-deploys on every push to `main` |
-| Domain | **Not finalized** — `comparedrx.com` is a working placeholder; `treatibly.com` was a candidate, deferred |
-| Brand | **Not finalized** — `ComparedRx` is a working placeholder |
+| Domain | **`treatsphere.com`** — live on Vercel, custom domain connected (2026-05-28) |
+| Brand | **Treatsphere** — locked 2026-05-28 |
 
 ## Repository layout
 
@@ -156,7 +156,7 @@ Compliance hardening pass per `AUDIT-2026-05-26.md`. Two pushes to `main`; both 
 
 In rough sequencing order, because some unblock others:
 
-1. **Lock the brand + domain + legal entity name + state of formation.** Cheapest cascade in the audit. Once known, the SITE.ts one-file swap + bulk find-and-replace of the 10 placeholder types in the legal pages lands in one session.
+1. **Brand + domain locked — Treatsphere / `treatsphere.com` (2026-05-28).** ✓ Still needed: legal entity name + state of formation to fill the remaining two placeholders in the legal pages.
 2. **Apply for LegitScript Healthcare Merchant Certification.** Critical-path gate for paid spend; takes weeks. `$975 application + $2,150/yr per domain.`
 3. **Healthcare-advertising attorney review** of the 10 legal pages, using `LEGAL-PUNCHLIST.md` as the punch list.
 4. **Create Cookiebot + GA4 + GTM accounts** and set `NEXT_PUBLIC_COOKIEBOT_ID` + `NEXT_PUBLIC_GTM_ID` in Vercel project settings. Trigger a redeploy.

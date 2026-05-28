@@ -1,9 +1,9 @@
 
-**Effective date: May 26, 2026**
+**Effective date: May 28, 2026**
 
 ## 1. Our Respect for Copyright
 
-[COMPANY LEGAL NAME], which operates ComparedRx (comparedrx.com), respects the intellectual property rights of others and expects users of the Site to do the same. This policy explains how to notify us of claimed copyright infringement on the Site and how we respond, consistent with the Digital Millennium Copyright Act ("DMCA"), 17 U.S.C. § 512.
+Madrank Digital Ltd, which operates Treatsphere (treatsphere.com), respects the intellectual property rights of others and expects users of the Site to do the same. This policy explains how to notify us of claimed copyright infringement on the Site and how we respond, consistent with the Digital Millennium Copyright Act ("DMCA"), 17 U.S.C. § 512.
 
 ## 2. How to File a Copyright Infringement Notice
 
@@ -44,10 +44,10 @@ As with infringement notices, knowingly materially misrepresenting that material
 Notices and counter-notices under this policy should be sent to our Designated Agent:
 
 **Copyright / DMCA Agent**
-[COMPANY LEGAL NAME]
-[BUSINESS MAILING ADDRESS]
-Email: [LEGAL/DMCA EMAIL]
-Phone: [PHONE NUMBER]
+Madrank Digital Ltd
+Arlozorov 27, Kiryat Shmona, Israel
+Email: legal@treatsphere.com
+Phone: +972-52-6660335
 
 > **Note to the business:** To qualify for DMCA safe-harbor protection, the Designated Agent must also be registered with the U.S. Copyright Office through its online directory at dmca.copyright.gov, and that registration must be kept current. Confirm this registration with your attorney.
 
@@ -57,7 +57,7 @@ It is our policy, in appropriate circumstances and at our discretion, to disable
 
 ## 7. Trademark and Other Concerns
 
-This policy addresses copyright. If you have a concern about a trademark or another intellectual property matter, please contact us at [LEGAL/DMCA EMAIL]. Note that third-party brand names and trademarks referenced on the Site are the property of their respective owners and are used for identification and editorial purposes only, as described in our **Terms of Service**.
+This policy addresses copyright. If you have a concern about a trademark or another intellectual property matter, please contact us at legal@treatsphere.com. Note that third-party brand names and trademarks referenced on the Site are the property of their respective owners and are used for identification and editorial purposes only, as described in our **Terms of Service**.
 
 ## 8. Changes to This Policy
 
@@ -65,4 +65,4 @@ We may update this DMCA / Copyright Policy from time to time. When we do, we wil
 
 ## 9. Contact
 
-For all copyright and DMCA matters, contact our Designated Agent at **[LEGAL/DMCA EMAIL]**.
+For all copyright and DMCA matters, contact our Designated Agent at **legal@treatsphere.com**.

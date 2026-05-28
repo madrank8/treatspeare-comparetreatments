@@ -2,21 +2,21 @@
   STRONG STARTING DRAFT — REVIEW BY A LICENSED ATTORNEY BEFORE PUBLICATION.
   This page is a publish-ready draft for a US-based telehealth treatment-comparison
   affiliate website. It is not legal advice. Have qualified counsel review it before
-  going live, and replace the [KNOWN LIMITATIONS] placeholder with an accurate
+  going live, and replace the none currently known placeholder with an accurate
   description (or remove it) after an accessibility evaluation.
 
   Placeholders used in this file:
-  [COMPANY LEGAL NAME], ComparedRx, comparedrx.com, [BUSINESS MAILING ADDRESS],
-  [GENERAL CONTACT EMAIL], [PHONE NUMBER]
+  Madrank Digital Ltd, Treatsphere, treatsphere.com, Arlozorov 27, Kiryat Shmona, Israel,
+  office@madrank.com, +972-52-6660335
 -->
 
 # Accessibility Statement
 
-**Effective date: May 26, 2026**
+**Effective date: May 28, 2026**
 
 ## Our Commitment
 
-[COMPANY LEGAL NAME], which operates ComparedRx (comparedrx.com), is committed to making the Site accessible to the widest possible audience, including people with disabilities. We believe everyone should be able to research and compare telehealth options with ease, and we work to provide a website that is usable and welcoming for all visitors.
+Madrank Digital Ltd, which operates Treatsphere (treatsphere.com), is committed to making the Site accessible to the widest possible audience, including people with disabilities. We believe everyone should be able to research and compare telehealth options with ease, and we work to provide a website that is usable and welcoming for all visitors.
 
 ## Conformance Goal
 
@@ -50,9 +50,9 @@ The Site links to third-party telehealth brands and may include third-party cont
 
 If you have difficulty accessing any part of the Site, or if you would like to request information or assistance, please contact us. We will do our best to provide the information or assistance you need through an accessible method, and we welcome reports of accessibility barriers so we can fix them.
 
-- **Email:** [GENERAL CONTACT EMAIL] — subject line: "Accessibility"
-- **Phone:** [PHONE NUMBER]
-- **Mailing address:** [COMPANY LEGAL NAME], [BUSINESS MAILING ADDRESS]
+- **Email:** office@madrank.com — subject line: "Accessibility"
+- **Phone:** +972-52-6660335
+- **Mailing address:** Madrank Digital Ltd, Arlozorov 27, Kiryat Shmona, Israel
 
 When contacting us, please describe the issue, the page or feature involved, and the assistive technology or browser you were using, if applicable. We aim to respond to accessibility requests promptly.
 

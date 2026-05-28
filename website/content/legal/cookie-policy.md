@@ -1,9 +1,9 @@
 
-**Effective date: May 26, 2026**
+**Effective date: May 28, 2026**
 
 ## 1. About This Policy
 
-This Cookie Policy explains how [COMPANY LEGAL NAME] ("ComparedRx," "we," "us," or "our") uses cookies and similar tracking technologies on comparedrx.com (the "Site"). It should be read together with our **Privacy Policy**, which describes how we handle personal information more generally.
+This Cookie Policy explains how Madrank Digital Ltd ("Treatsphere," "we," "us," or "our") uses cookies and similar tracking technologies on treatsphere.com (the "Site"). It should be read together with our **Privacy Policy**, which describes how we handle personal information more generally.
 
 By using the Site, and where required by law by accepting non-essential cookies through our consent banner, you agree to the use of cookies as described in this Policy.
 
@@ -79,4 +79,4 @@ We may update this Cookie Policy from time to time to reflect changes in technol
 
 ## 9. Contact Us
 
-If you have questions about this Cookie Policy or about how we use cookies, contact us at **[PRIVACY EMAIL]**.
+If you have questions about this Cookie Policy or about how we use cookies, contact us at **privacy@treatsphere.com**.

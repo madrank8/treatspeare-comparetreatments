@@ -1,9 +1,9 @@
 
-**Effective date: May 26, 2026**
+**Effective date: May 28, 2026**
 
 ## 1. Why We Publish This Page
 
-ComparedRx (comparedrx.com) reviews, compares, and ranks third-party telehealth brands. Because we earn compensation from some of the brands we cover, we believe you are entitled to know exactly how our reviews and rankings are produced — and to be confident that compensation does not buy a better score.
+Treatsphere (treatsphere.com) reviews, compares, and ranks third-party telehealth brands. Because we earn compensation from some of the brands we cover, we believe you are entitled to know exactly how our reviews and rankings are produced — and to be confident that compensation does not buy a better score.
 
 This page explains our scoring framework, how we research brands, how we keep editorial scoring separate from commercial relationships, and how we correct mistakes. It is meant to be a genuine description of how we work, not a formality.
 
@@ -56,7 +56,7 @@ We do not publish fake reviews, we do not buy or incentivize reviews in exchange
 
 ## 6. Editorial Independence and How Compensation Is Handled
 
-ComparedRx earns compensation from some brands through affiliate commissions, paid placement, pay-per-click, and pay-per-call or pay-per-lead arrangements. We are transparent about this in our **Affiliate and Advertising Disclosure**. Here is how we keep that compensation from corrupting our reviews:
+Treatsphere earns compensation from some brands through affiliate commissions, paid placement, pay-per-click, and pay-per-call or pay-per-lead arrangements. We are transparent about this in our **Affiliate and Advertising Disclosure**. Here is how we keep that compensation from corrupting our reviews:
 
 - **Compensation does not affect editorial scores.** A brand's score is determined solely by the weighted criteria in Section 3. Paying us — or paying us more — does not raise a score, and declining to pay us does not lower one.
 - **Paid placement is always labeled.** If a brand pays for placement in a particular position or unit, that placement is clearly labeled as "Sponsored" or "Advertisement." A labeled paid placement does not change the brand's editorial score or written assessment.
@@ -80,10 +80,10 @@ Telehealth brands change their pricing, products, and policies frequently. Each 
 
 We take accuracy seriously. If we learn that something we published is inaccurate or out of date, we will correct it promptly and, where the correction is material, note that the page has been updated.
 
-If you believe a review, comparison, score, or other content contains an error, please tell us at **[GENERAL CONTACT EMAIL]** with the subject line "Correction." Please include the page URL and a description of the issue, with a source if you have one. We review every correction request and will respond.
+If you believe a review, comparison, score, or other content contains an error, please tell us at **office@madrank.com** with the subject line "Correction." Please include the page URL and a description of the issue, with a source if you have one. We review every correction request and will respond.
 
-For legal or copyright concerns, contact **[LEGAL/DMCA EMAIL]**.
+For legal or copyright concerns, contact **legal@treatsphere.com**.
 
 ## 10. Questions
 
-If you have questions about how we research, score, or rank brands, contact us at **[GENERAL CONTACT EMAIL]**. This Editorial and Review Methodology should be read together with our **Affiliate and Advertising Disclosure**, **Medical Disclaimer**, and **Terms of Service**.
+If you have questions about how we research, score, or rank brands, contact us at **office@madrank.com**. This Editorial and Review Methodology should be read together with our **Affiliate and Advertising Disclosure**, **Medical Disclaimer**, and **Terms of Service**.

@@ -1,9 +1,9 @@
 
-**Effective date: May 26, 2026**
+**Effective date: May 28, 2026**
 
 ## Who We Are
 
-ComparedRx (comparedrx.com) is an independent online publisher that reviews, compares, and ranks telehealth brands across the United States. The Site is owned and operated by [COMPANY LEGAL NAME], a company organized under the laws of the State of [STATE OF FORMATION].
+Treatsphere (treatsphere.com) is an independent online publisher that reviews, compares, and ranks telehealth brands across the United States. The Site is owned and operated by Madrank Digital Ltd, a company organized under the laws of the State of Israel.
 
 We cover the telehealth categories that matter most to everyday consumers — including weight management and GLP-1 medications, men's health, women's health, erectile dysfunction, testosterone and hormone therapy, hair loss, skin care, sexual health, and at-home blood testing.
 
@@ -19,7 +19,7 @@ The telehealth market has grown quickly, and it can be hard for consumers to tel
 
 ## What We Do Not Do
 
-We want to be clear about our limits. ComparedRx is **not** a healthcare provider, a medical practice, a pharmacy, or a telehealth platform. We do **not**:
+We want to be clear about our limits. Treatsphere is **not** a healthcare provider, a medical practice, a pharmacy, or a telehealth platform. We do **not**:
 
 - provide medical advice, diagnosis, or treatment;
 - prescribe, dispense, compound, or sell any medication or treatment;
@@ -30,7 +30,7 @@ Our content is informational and educational only. Decisions about your health s
 
 ## How We Make Money
 
-ComparedRx is free to use. We are funded through advertising and affiliate relationships: when readers click through to a telehealth brand from our Site and take certain actions, we may earn a commission or fee. This can include affiliate commissions, paid placement, and pay-per-click or pay-per-call compensation.
+Treatsphere is free to use. We are funded through advertising and affiliate relationships: when readers click through to a telehealth brand from our Site and take certain actions, we may earn a commission or fee. This can include affiliate commissions, paid placement, and pay-per-click or pay-per-call compensation.
 
 We disclose this clearly and in detail in our **Affiliate and Advertising Disclosure**, and a short disclosure also appears on every review and comparison page near the links it describes. We believe you should always know how a publisher is funded.
 
@@ -40,7 +40,7 @@ We earn money from some of the brands we write about — and we have built our p
 
 ## Our Team and Medical Review
 
-[EDITORIAL TEAM DESCRIPTION] Our writers and editors research telehealth brands, verify pricing and policies, and aggregate genuine customer feedback.
+Treatsphere's editorial team is a small, independent group of writers, editors, and researchers focused on the consumer telehealth market. Our writers and editors research telehealth brands, verify pricing and policies, and aggregate genuine customer feedback.
 
 Because we cover health topics, our clinical content is reviewed for accuracy and responsible framing by a qualified medical reviewer, [MEDICAL REVIEWER NAME, CREDENTIALS]. Medical review helps ensure our content is accurate and appropriately cautious. It is not personalized medical advice and does not create a clinician–patient relationship.
 
@@ -58,7 +58,7 @@ We hold our content to high standards of experience, expertise, authoritativenes
 
 We welcome your questions, feedback, and corrections.
 
-- **General inquiries:** [GENERAL CONTACT EMAIL]
-- **Mailing address:** [COMPANY LEGAL NAME], [BUSINESS MAILING ADDRESS]
+- **General inquiries:** office@madrank.com
+- **Mailing address:** Madrank Digital Ltd, Arlozorov 27, Kiryat Shmona, Israel
 
 For corrections, privacy requests, partnership inquiries, or legal notices, please see our **Contact** page, which routes each type of request to the right place.

@@ -1,13 +1,12 @@
-# Website (working brand: ComparedRx)
+# Website — Treatsphere
 
 A US telehealth treatment-comparison affiliate site. Built with **Next.js 16
 (App Router, Turbopack)**, **React 19**, **TypeScript (strict)** and
 **Tailwind CSS v4**.
 
-The brand name in this codebase is a placeholder — see
-[`AUDIT-2026-05-26.md`](../AUDIT-2026-05-26.md) § P0-5 for the swap plan.
-Every visible brand reference flows through `lib/site.ts`, so the real-brand
-swap is a single-file change.
+Brand `Treatsphere` and production domain `https://treatsphere.com` were
+locked on 2026-05-28. Every visible brand reference flows through
+`lib/site.ts`, so any future rebrand is a single-file change.
 
 ## Run it
 

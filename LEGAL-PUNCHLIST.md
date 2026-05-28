@@ -1,7 +1,7 @@
 # Legal Pages — Outstanding Placeholders
 
 **Updated:** 2026-05-26
-**Status:** brand swap done (`Treatibly`→`ComparedRx`, `treatibly.com`→`comparedrx.com`, effective date filled). 10 placeholder types remain — these need real values from Niro and/or a healthcare-advertising attorney before publication.
+**Status:** brand swap done (Treatibly → ComparedRx → **Treatsphere** as of 2026-05-28; domain `treatsphere.com` live); effective date filled. 10 placeholder types remain — these need real values from Niro and/or a healthcare-advertising attorney before publication.
 
 This file is the single source of truth for what's still unfilled in the 10 legal pages. Both folders (`legal/` source drafts and `website/content/legal/` rendered copies) carry the same placeholders; updating both keeps them in sync.
 
@@ -11,7 +11,7 @@ This file is the single source of truth for what's still unfilled in the 10 lega
 
 | # | Placeholder | What it needs | Who fills it |
 |---|---|---|---|
-| 1 | `[COMPANY LEGAL NAME]` | The registered business entity (e.g. `ComparedRx LLC`) | Niro — entity formation |
+| 1 | `[COMPANY LEGAL NAME]` | The registered business entity (e.g. `Treatsphere LLC`) | Niro — entity formation |
 | 2 | `[BUSINESS MAILING ADDRESS]` | A real address for legal notices, DMCA, privacy requests | Niro |
 | 3 | `[STATE OF FORMATION]` | The US state the entity is formed in (governs the contract) | Niro (Delaware is a common default) |
 | 4 | `[GENERAL CONTACT EMAIL]` | A monitored inbox (e.g. `hello@<domain>`) | Niro |
@@ -61,6 +61,6 @@ When filling, do every occurrence in both `legal/<name>.md` AND the matching `we
 - **P0-3** — healthcare-advertising attorney review of the 10 pages (external).
 - **P0-10** — register a DMCA Designated Agent with the U.S. Copyright Office (external; the email above must match what you register).
 - **P0-9** — appoint real medical reviewer(s); update `lib/data/authors.ts` to remove the "sample content only" framing and reflect the real people. The legal pages depend on this for `[MEDICAL REVIEWER NAME, CREDENTIALS]`.
-- **P0-1** — lock the real brand, entity name, and domain so the `ComparedRx` placeholder swap can happen at the SITE.ts level (one-file change) and the legal pages keep matching the chrome.
+- **P0-1 (partial)** — brand + domain locked (Treatsphere / `treatsphere.com`, 2026-05-28); still need the legal entity name + state of formation to complete the remaining placeholder fills.
 
 See `AUDIT-2026-05-26.md` for the full Option A roadmap.
