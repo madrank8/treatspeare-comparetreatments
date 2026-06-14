@@ -13,6 +13,7 @@ import {
   buildOrganizationSchema,
   buildWebSiteSchema,
 } from "@/lib/schema";
+import { Analytics } from "@vercel/analytics/next";
 
 /** UI + body font. */
 const inter = Inter({
@@ -78,6 +79,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
