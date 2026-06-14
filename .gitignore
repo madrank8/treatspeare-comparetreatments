@@ -20,3 +20,8 @@ next-env.d.ts
 # os
 .DS_Store
 .gstack/
+
+# Beads / Dolt files (added by bd init)
+.dolt/
+*.db
+.beads-credential-key
