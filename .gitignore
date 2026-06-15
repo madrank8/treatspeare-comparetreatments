@@ -21,6 +21,10 @@ next-env.d.ts
 .DS_Store
 .gstack/
 
+# vercel (local CLI link — do not commit)
+.vercel
+website/.vercel
+
 # Beads / Dolt files (added by bd init)
 .dolt/
 *.db

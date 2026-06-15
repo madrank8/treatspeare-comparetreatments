@@ -1,26 +1,41 @@
 # comparetreatments
 
-A US telehealth **treatment-comparison affiliate site** — research, strategy, a complete legal/compliance page set, and a Next.js web app for launching a site modeled on the competitor `comparetreatments.com` and designed to beat it.
+A US telehealth **treatment-comparison affiliate site** — research, strategy, legal/compliance drafts, and a Next.js app. Competitor benchmark: [comparetreatments.com](https://comparetreatments.com). Production app: [treatsphere.com](https://treatsphere.com).
+
+**This repo is the single project home** — code, strategy, legal, and agent docs all live here. Issue tracking: `bd` (run `bd ready`).
 
 ## Repo layout
 
 | Path | Contents |
 |---|---|
-| `website/` | The Next.js (App Router, TypeScript, Tailwind) application — pages, components, data, and SEO/schema utilities. |
-| `strategy/` | Competitor teardown and 2X blueprint, the site architecture and build plan, and the content/SEO/PPC strategy. |
-| `compliance/` | Compliance and legal roadmap — LegitScript, Bing/Google ad policy, FTC, FDA, state privacy, accessibility, and a pre-launch checklist. |
-| `legal/` | Ten legal-page drafts (privacy policy, terms of service, affiliate disclosure, medical disclaimer, editorial methodology, about, contact, cookie policy, accessibility statement, DMCA policy). |
-| `START-HERE.md` | The master index — read this first for an overview of the whole package. |
+| `website/` | Next.js app (App Router, TypeScript, Tailwind) — **start here for code** |
+| `strategy/` | Competitor teardown, architecture plan, SEO/PPC strategy |
+| `compliance/` | LegitScript, FTC/FDA, ad-policy roadmap |
+| `legal/` | Ten legal-page drafts (attorney review required) |
+| `docs/DEPLOYMENTS.md` | Vercel URLs, env vars, deploy setup |
+| `PROJECT-STATUS.md` | Build tracker / session handoff |
+| `START-HERE.md` | Strategy package index |
+| `AGENTS.md` | Agent + project map (read first in Cursor) |
 
 ## Run the website
 
 ```bash
 cd website
 npm install
+cp .env.example .env.local   # optional — all vars no-op when unset
 npm run dev
 ```
 
-The dev server starts on `http://localhost:3000`.
+Dev server: http://localhost:3000
+
+## Deployments
+
+| URL | Source |
+|---|---|
+| [treatsphere.com](https://treatsphere.com) | This repo → `website/` → Vercel `comparetreatments` |
+| [comparetreatments-site.vercel.app](https://comparetreatments-site.vercel.app) | Separate static Vercel project — source not in repo yet |
+
+Details: `docs/DEPLOYMENTS.md`
 
 ## Note
 

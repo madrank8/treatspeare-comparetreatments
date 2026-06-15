@@ -1,7 +1,6 @@
 # comparetreatments — Project Status
 
-> Working tracker for the build. **Last updated: 2026-05-28.**
-> Update this file as work progresses so each session can pick up cleanly.
+> Working tracker for the build. **Last updated: 2026-06-14.**
 
 ---
 
@@ -9,7 +8,7 @@
 
 A US telehealth **treatment-comparison affiliate site** — modeled on the competitor `comparetreatments.com` and built to beat it on structure, E-E-A-T, performance, and compliance. Revenue model: affiliate commissions + paid placement + pay-per-click / pay-per-call.
 
-**Brand: Treatsphere · Production domain: https://treatsphere.com** — locked and live on Vercel (2026-05-28). The single-file pattern in `website/lib/site.ts` + a 4-string find-and-replace across `legal/` + `website/content/legal/` remains the way to rebrand if it ever changes again.
+**Brand in code: Treatsphere · Production domain: https://treatsphere.com** — configured in `website/lib/site.ts` (2026-05-28). A parallel static landing at `comparetreatments-site.vercel.app` uses comparetreatments.com branding but its source is **not in this repo** (see `docs/DEPLOYMENTS.md`).
 
 ## Quick facts
 
@@ -17,11 +16,14 @@ A US telehealth **treatment-comparison affiliate site** — modeled on the compe
 |---|---|
 | GitHub repo | https://github.com/madrank8/comparetreatments (public) |
 | Local clone | `~/Documents/GitHub/comparetreatments` |
-| App | `website/` — **Next.js 16.2.6**, React 19.1, TypeScript strict, Tailwind v4.1 |
+| Cursor workspace | Same path — treat this repo as the single project home |
+| App | `website/` — **Next.js 16**, React 19, TypeScript strict, Tailwind v4 |
 | Run locally | `cd website && npm install && npm run dev` → localhost:3000 |
-| Live deploy | https://comparetreatments-eight.vercel.app — Vercel, auto-deploys on every push to `main` |
-| Domain | **`treatsphere.com`** — live on Vercel, custom domain connected (2026-05-28) |
-| Brand | **Treatsphere** — locked 2026-05-28 |
+| **Primary deploy** | https://treatsphere.com — Vercel project `comparetreatments` (root dir `website`), auto-deploys on push to `main` |
+| Preview alias | https://comparetreatments-eight.vercel.app |
+| Secondary deploy | https://comparetreatments-site.vercel.app — Vercel project `comparetreatments-site` (static `site/` output; source TBD) |
+| Issue tracking | `bd` (beads) — run `bd ready` for open work |
+| Deploy docs | `docs/DEPLOYMENTS.md` |
 
 ## Repository layout
 
@@ -33,6 +35,8 @@ A US telehealth **treatment-comparison affiliate site** — modeled on the compe
 | `legal/` | 10 legal-page drafts (markdown source — the master copy that goes to counsel) |
 | `START-HERE.md` | Master index of the strategy/compliance package |
 | `PROJECT-STATUS.md` | **This file** — handoff tracker |
+| `docs/DEPLOYMENTS.md` | Vercel projects, URLs, env vars, deploy commands |
+| `docs/assets/mockups/` | Homepage design reference images |
 | `AUDIT-2026-05-26.md` | Full strategy/architecture/compliance vs. codebase gap analysis |
 | `LEGAL-PUNCHLIST.md` | What is still unfilled in the 10 legal pages, mapped to who fills it |
 

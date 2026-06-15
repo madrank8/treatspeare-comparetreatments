@@ -1,4 +1,32 @@
-# Agent Instructions
+# Agent Instructions — comparetreatments
+
+US telehealth **treatment-comparison affiliate** project. Competitor benchmark: comparetreatments.com. Production brand in code: **Treatsphere** (`website/lib/site.ts`).
+
+## Project map
+
+| Path | What it is |
+|---|---|
+| `website/` | **Main app** — Next.js 16, React 19, Tailwind v4. Deployed via Vercel project `comparetreatments` (root dir `website`) → [treatsphere.com](https://treatsphere.com) |
+| `strategy/` | Competitor teardown, site architecture plan, SEO/PPC strategy |
+| `compliance/` | LegitScript, FTC/FDA, ad-policy roadmap |
+| `legal/` | Master legal-page drafts (counsel review required) |
+| `website/content/legal/` | Legal pages rendered by the Next.js app |
+| `docs/DEPLOYMENTS.md` | Vercel URLs, env vars, two-project layout |
+| `PROJECT-STATUS.md` | Build tracker / session handoff |
+| `START-HERE.md` | Strategy package index |
+| `docs/assets/mockups/` | Homepage mockup reference images |
+
+## Commands
+
+```bash
+cd website && npm install && npm run dev   # localhost:3000
+cd website && npm run build && npm run lint
+vercel link --yes --project comparetreatments --cwd website
+```
+
+**GitHub:** https://github.com/madrank8/comparetreatments
+
+---
 
 This project uses **bd** (beads) for issue tracking. Run `bd prime` for full workflow context.
 

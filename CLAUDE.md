@@ -52,18 +52,28 @@ bd close <id>         # Complete work
 
 ## Build & Test
 
-_Add your build and test commands here_
-
 ```bash
-# Example:
-# npm install
-# npm test
+cd website
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # production static export check (46+ routes)
+npm run lint
 ```
 
 ## Architecture Overview
 
-_Add a brief overview of your project architecture_
+Monorepo-style layout: planning docs at repo root, runnable app in `website/`.
+
+- **App:** Next.js App Router, SSG/ISR, Tailwind v4, strict TypeScript
+- **Content:** seeded TS data (`website/lib/data/`) + legal markdown (`website/content/legal/`)
+- **Brand:** single source of truth in `website/lib/site.ts` (cascades to schema, sitemap, footer)
+- **Affiliate:** `/go/[slug]` server route — 302 redirect + optional KV click log
+- **Deploy:** Vercel project `comparetreatments`, root directory `website` → treatsphere.com
+
+See `docs/DEPLOYMENTS.md` for the second Vercel project (`comparetreatments-site` static landing).
 
 ## Conventions & Patterns
 
-_Add your project-specific conventions here_
+- Rebrand = edit `website/lib/site.ts` + parallel find-and-replace in `legal/` and `website/content/legal/`
+- YMYL category: legal pages are drafts pending attorney review
+- Issue tracking: `bd` only (no markdown TODO lists)
